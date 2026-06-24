@@ -89,3 +89,32 @@ main { padding: 16px; }
 .lightbox p { margin:12px 0 0; text-align:center; font-weight:800; }
 .lightbox__close { position:absolute; top:16px; right:16px; width:44px; height:44px; border-radius:999px; border:1px solid var(--line); background:#fff; color:#111; font-size:30px; line-height:1; }
 @media (min-width: 720px) { .menu-grid { grid-template-columns: repeat(2, 1fr); } .hero { padding-left: calc((100vw - 780px)/2); padding-right: calc((100vw - 780px)/2); } }
+
+
+.lunch-banner {
+  margin: 14px 0 4px;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 59, 31, .34);
+  background: rgba(255,255,255,.05);
+  box-shadow: 0 14px 28px rgba(0,0,0,.22);
+}
+.lunch-banner img {
+  display: block;
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+}
+.dish-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.dish-weight {
+  color: rgba(247,240,232,.68);
+  font-size: 13px;
+  line-height: 1.2;
+}
+.dish-weight[hidden], .dish-price[hidden] { display: none; }

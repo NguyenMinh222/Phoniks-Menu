@@ -26,6 +26,11 @@
       <button class="lang" data-lang="zh">🇨🇳 中文</button>
     </div>
 
+
+    <section class="lunch-banner" aria-label="Обеденное меню PHONIKS">
+      <img src="images/tomyum.png" alt="Обеденное меню PHONIKS" loading="lazy" onerror="this.closest('.lunch-banner').hidden = true" />
+    </section>
+
     <div class="search-wrap">
       <input id="searchInput" type="search" placeholder="Поиск по меню" autocomplete="off" />
     </div>
@@ -61,6 +66,9 @@
       <div class="dish-body">
         <div class="dish-head">
           <h3 class="dish-name"></h3>
+        </div>
+        <div class="dish-meta">
+          <span class="dish-weight"></span>
           <strong class="dish-price"></strong>
         </div>
         <p class="dish-desc"></p>

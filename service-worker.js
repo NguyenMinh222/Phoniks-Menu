@@ -1,4 +1,4 @@
-const CACHE_NAME = "phoniks-menu-v1";
+const CACHE_NAME = "phoniks-menu-v2";
 const FILES = [
   "./",
   "./index.html",
