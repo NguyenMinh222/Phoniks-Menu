@@ -1,0 +1,91 @@
+:root {
+  --bg: #0b0b0b;
+  --card: #171717;
+  --muted: #a8a8a8;
+  --text: #f7f0e8;
+  --line: rgba(255,255,255,.11);
+  --accent: #ff3b1f;
+  --accent2: #ffb000;
+  --radius: 22px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(255,59,31,.25), transparent 34rem),
+    linear-gradient(180deg, #111 0%, var(--bg) 42%);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.hero {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 18px 16px 14px;
+  background: rgba(11,11,11,.88);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--line);
+}
+
+.hero__top { display: flex; justify-content: space-between; gap: 12px; align-items: start; }
+.eyebrow { margin: 0 0 4px; color: var(--accent2); text-transform: uppercase; letter-spacing: .18em; font-size: 11px; }
+h1 { margin: 0; font-size: 36px; letter-spacing: -.05em; line-height: .9; }
+.subtitle { margin: 8px 0 0; color: var(--muted); font-size: 14px; }
+.install-btn {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: #111;
+  border-radius: 999px;
+  padding: 9px 12px;
+  font-weight: 800;
+}
+.language-switcher, .chips { display: flex; gap: 8px; overflow-x: auto; padding: 14px 0 2px; scrollbar-width: none; }
+.language-switcher::-webkit-scrollbar, .chips::-webkit-scrollbar { display: none; }
+.lang, .chip {
+  flex: 0 0 auto;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.06);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 10px 13px;
+  font-weight: 750;
+}
+.lang.active, .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.search-wrap { margin-top: 12px; }
+#searchInput {
+  width: 100%; border: 1px solid var(--line); outline: none; border-radius: 16px;
+  background: rgba(255,255,255,.08); color: var(--text); padding: 14px 15px; font-size: 16px;
+}
+#searchInput::placeholder { color: #777; }
+main { padding: 16px; }
+.menu-grid { display: grid; grid-template-columns: 1fr; gap: 14px; max-width: 780px; margin: 0 auto; }
+.dish-card {
+  overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(23,23,23,.94);
+  box-shadow: 0 16px 34px rgba(0,0,0,.25);
+}
+.dish-image-btn { display:block; padding:0; width:100%; border:0; background:#222; cursor: zoom-in; }
+.dish-image { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.dish-body { padding: 14px; }
+.dish-head { display:flex; justify-content:space-between; gap:12px; align-items:start; }
+.dish-name { margin:0; font-size:20px; line-height:1.1; letter-spacing:-.02em; }
+.dish-price { flex:0 0 auto; color:#111; background: var(--accent2); border-radius:999px; padding:7px 10px; font-size:15px; }
+.dish-desc { margin:10px 0 0; color: var(--muted); line-height:1.45; font-size:14px; }
+.badges { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
+.badge { font-size:13px; border:1px solid var(--line); border-radius:999px; padding:6px 9px; background:rgba(255,255,255,.06); }
+.empty { text-align:center; color:var(--muted); margin:36px 0; }
+.qr-section { margin: 16px; padding: 20px; border:1px solid var(--line); border-radius:28px; background:#f7f0e8; color:#111; text-align:center; }
+.qr-section h2 { margin:0; font-size:28px; letter-spacing:-.04em; }
+.qr-section p { color:#444; }
+.qr-code { margin: 14px auto 8px; width: 180px; height: 180px; padding: 10px; background:#fff; border-radius:18px; display:grid; place-items:center; }
+.qr-code img, .qr-code canvas { width:100%; height:100%; }
+.qr-url { font-size:12px; word-break:break-all; }
+.lightbox { position: fixed; inset:0; z-index:99; background:rgba(0,0,0,.92); display:grid; place-items:center; padding:22px; }
+.lightbox[hidden] { display:none; }
+.lightbox img { max-width:100%; max-height:78vh; border-radius:20px; object-fit:contain; }
+.lightbox p { margin:12px 0 0; text-align:center; font-weight:800; }
+.lightbox__close { position:absolute; top:16px; right:16px; width:44px; height:44px; border-radius:999px; border:1px solid var(--line); background:#fff; color:#111; font-size:30px; line-height:1; }
+@media (min-width: 720px) { .menu-grid { grid-template-columns: repeat(2, 1fr); } .hero { padding-left: calc((100vw - 780px)/2); padding-right: calc((100vw - 780px)/2); } }
