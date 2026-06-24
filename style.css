@@ -118,3 +118,53 @@ main { padding: 16px; }
   line-height: 1.2;
 }
 .dish-weight[hidden], .dish-price[hidden] { display: none; }
+
+.lunch-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  transition: all .35s ease;
+}
+
+.lunch-banner img {
+  width: 100%;
+  display: block;
+  transition: all .35s ease;
+}
+
+.lunch-banner-collapsed {
+  height: 52px;
+  min-height: 52px;
+}
+
+.lunch-banner-collapsed img {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.lunch-mini {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+
+  opacity: 0;
+  transition: opacity .25s ease;
+
+  background: linear-gradient(
+    90deg,
+    #ff3b1f,
+    #ff6b00
+  );
+
+  color: white;
+}
+
+.lunch-banner-collapsed .lunch-mini {
+  opacity: 1;
+}

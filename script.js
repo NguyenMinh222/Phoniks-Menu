@@ -230,5 +230,29 @@ installBtn.addEventListener("click", async () => {
   deferredPrompt = null; installBtn.hidden = true;
 });
 
+
+const lunchBanner = document.getElementById("lunchBanner");
+
+window.addEventListener(
+  "scroll",
+  () => {
+
+    if (!lunchBanner) return;
+
+    if (window.scrollY > 140) {
+      lunchBanner.classList.add(
+        "lunch-banner-collapsed"
+      );
+    } else {
+      lunchBanner.classList.remove(
+        "lunch-banner-collapsed"
+      );
+    }
+
+  },
+  { passive: true }
+);
+
+
 setLanguage(currentLang);
 renderQr();
