@@ -480,7 +480,7 @@ const MENU = [
     {
     id: "wok-chicken",
     category: "noodles",
-    price: 20,
+    price: 21,
     weight: "уточняется",
     image: "images/mi-wok.webp",
     spicy: false,
@@ -505,7 +505,7 @@ const MENU = [
   {
     id: "wok-beef",
     category: "noodles",
-    price: 22,
+    price: 24,
     weight: "уточняется",
     image: "images/wok-beef.webp",
     spicy: false,
@@ -530,7 +530,7 @@ const MENU = [
   {
     id: "udon-beef-unagi",
     category: "noodles",
-    price: 24,
+    price: 27,
     weight: "уточняется",
     image: "images/udon-beef-unagi.webp",
     spicy: false,
@@ -555,7 +555,7 @@ const MENU = [
   {
     id: "udon-shrimp-curry",
     category: "noodles",
-    price: 24,
+    price: 29,
     weight: "уточняется",
     image: "images/udon-shrimp-curry.webp",
     spicy: true,
@@ -580,7 +580,7 @@ const MENU = [
   {
     id: "udon-chicken-curry",
     category: "noodles",
-    price: 22,
+    price: 25,
     weight: "уточняется",
     image: "images/udon-chicken-curry.webp",
     spicy: true,
@@ -605,7 +605,7 @@ const MENU = [
   {
     id: "mi-chon-chicken",
     category: "bowls",
-    price: 18,
+    price: 19,
     weight: "уточняется",
     image: "images/mi-chon-chicken.webp",
     spicy: false,
@@ -630,7 +630,7 @@ const MENU = [
   {
     id: "mi-chon-beef",
     category: "bowls",
-    price: 20,
+    price: 22,
     weight: "уточняется",
     image: "images/mi-chon-beef.webp",
     spicy: false,
@@ -655,7 +655,7 @@ const MENU = [
   {
     id: "mi-chon-shrimp",
     category: "bowls",
-    price: 22,
+    price: 24,
     weight: "уточняется",
     image: "images/mi-chon-shrimp.webp",
     spicy: false,
@@ -680,7 +680,7 @@ const MENU = [
   {
     id: "com-chon-shrimp",
     category: "bowls",
-    price: null,
+    price: 26,
     weight: "уточняется",
     image: "images/com-tron.webp",
     spicy: false,
@@ -705,7 +705,7 @@ const MENU = [
   {
     id: "com-chon-beef",
     category: "bowls",
-    price: null,
+    price: 24,
     weight: "уточняется",
     image: "images/com-chon-beef.webp",
     spicy: false,
@@ -730,7 +730,7 @@ const MENU = [
   {
     id: "com-chon-chicken",
     category: "bowls",
-    price: null,
+    price: 21,
     weight: "уточняется",
     image: "images/com-chon-chicken.webp",
     spicy: false,
@@ -755,7 +755,7 @@ const MENU = [
   {
     id: "com-rang-chicken",
     category: "rice",
-    price: null,
+    price: 22,
     weight: "уточняется",
     image: "images/com-rang.webp",
     spicy: false,
@@ -780,7 +780,7 @@ const MENU = [
   {
     id: "com-rang-beef",
     category: "rice",
-    price: null,
+    price: 25,
     weight: "уточняется",
     image: "images/com-rang-beef.webp",
     spicy: false,
@@ -805,7 +805,7 @@ const MENU = [
   {
     id: "com-rang-shrimp",
     category: "rice",
-    price: null,
+    price: 28,
     weight: "уточняется",
     image: "images/com-rang-shrimp.webp",
     spicy: false,
@@ -830,7 +830,7 @@ const MENU = [
   {
     id: "bun-cha",
     category: "hot",
-    price: null,
+    price: 26,
     weight: "уточняется",
     image: "images/bun-cha.webp",
     spicy: false,
@@ -930,7 +930,7 @@ const MENU = [
   {
     id: "bo-luc-lac",
     category: "hot",
-    price: null,
+    price: 31,
     weight: "уточняется",
     image: "images/bo-luc-lac.webp",
     spicy: false,
@@ -955,7 +955,7 @@ const MENU = [
   {
     id: "bo-sao",
     category: "hot",
-    price: null,
+    price: 27,
     weight: "уточняется",
     image: "images/bo-xao.webp",
     spicy: false,
@@ -980,7 +980,7 @@ const MENU = [
   {
     id: "ga-sao",
     category: "hot",
-    price: null,
+    price: 24,
     weight: "уточняется",
     image: "images/ga-xao.webp",
     spicy: false,
@@ -1281,7 +1281,7 @@ const MENU = [
   {
     id: "tofu-sweet-chili",
     category: "hot",
-    price: 17,
+    price: 16,
     weight: "уточняется",
     image: "images/tofu-sweet-chili.webp",
     spicy: false,
@@ -1306,7 +1306,7 @@ const MENU = [
   {
     id: "eggplant-kai",
     category: "hot",
-    price: 18,
+    price: 15,
     weight: "уточняется",
     image: "images/ca-tim-cay.webp",
     spicy: true,
@@ -1357,7 +1357,7 @@ const MENU = [
   {
     id: "nom-tom",
     category: "salads",
-    price: null,
+    price: 18,
     weight: "уточняется",
     image: "images/nom-tom.webp",
     spicy: false,
@@ -1382,7 +1382,7 @@ const MENU = [
   {
     id: "nom-ga",
     category: "salads",
-    price: null,
+    price: 16,
     weight: "уточняется",
     image: "images/nom-ga.webp",
     spicy: false,
@@ -1432,7 +1432,7 @@ const MENU = [
   {
     id: "white-rice",
     category: "extra",
-    price: null,
+    price: 2.5,
     weight: "уточняется",
     image: "images/white-rice.webp",
     spicy: false,
@@ -1457,7 +1457,7 @@ const MENU = [
   {
     id: "fried-rice-egg",
     category: "extra",
-    price: null,
+    price: 3.5,
     weight: "уточняется",
     image: "images/com-rang-trung.webp",
     spicy: false,
@@ -1507,7 +1507,7 @@ const MENU = [
   {
     id: "strips-fries",
     category: "kids",
-    price: null,
+    price: 12,
     weight: "уточняется",
     image: "images/strips-fries.webp",
     spicy: false,
@@ -1632,7 +1632,7 @@ const MENU = [
   {
     id: "banh-bao",
     category: "snacks",
-    price: null,
+    price: 9,
     weight: "уточняется",
     image: "images/banh-bao.webp",
     spicy: false,
@@ -1682,7 +1682,7 @@ const MENU = [
   {
     id: "batat-fried",
     category: "snacks",
-    price: null,
+    price: 11,
     weight: "уточняется",
     image: "images/batat-frie.webp",
     spicy: false,
@@ -1757,7 +1757,7 @@ const MENU = [
   {
     id: "nem",
     category: "snacks",
-    price: 12,
+    price: 16,
     weight: "уточняется",
     image: "images/nem.webp",
     spicy: false,
@@ -1807,7 +1807,7 @@ const MENU = [
   {
     id: "goi-cuon",
     category: "snacks",
-    price: null,
+    price: 12,
     weight: "уточняется",
     image: "images/goi-cuon.webp",
     spicy: false,
@@ -1833,26 +1833,26 @@ const MENU = [
   {
     id: "tom-chien",
     category: "snacks",
-    price: null,
+    price: 21,
     weight: "уточняется",
     image: "images/tom-chien.webp",
     spicy: false,
     hit: false,
     ru: {
-      name: "Том Чиен",
+      name: "Том Чиен (10 шт)",
       description: "Хрустящие креветки во фритюре."
     },
     en: {
-      name: "Tom Chien",
+      name: "Tom Chien (10 pcs)",
       description: "Crispy deep-fried shrimp."
     },
     vn: {
-      name: "Tôm Chiên",
+      name: "Tôm Chiên (10 cuốn)",
       description: "Tôm chiên giòn."
     },
     zh: {
       name: "炸虾",
-      description: "香脆炸虾。"
+      description: "香脆炸虾。(10个）"
     }
   },
   {
@@ -1883,7 +1883,7 @@ const MENU = [
   {
     id: "xuc-xich-nuong",
     category: "snacks",
-    price: null,
+    price: 9,
     weight: "уточняется",
     image: "images/xuc-xich-nuong.webp",
     spicy: false,
@@ -1908,7 +1908,7 @@ const MENU = [
   {
     id: "pho-mai-chien",
     category: "snacks",
-    price: null,
+    price: 16,
     weight: "уточняется",
     image: "images/pho-mai-chien.webp",
     spicy: false,
