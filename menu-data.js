@@ -1,7 +1,7 @@
 /*
   PHONIKS QR MENU
   Фото клади в папку /images
-  PNG поддерживается: image: "images/pho-bo.jpg"
+  PNG поддерживается: image: "images/pho-bo.webp"
   Граммовка: weight: "350 г" или weight: "450 г + рис 120 г"
 */
 
@@ -32,7 +32,7 @@ const MENU = [
     //   zh: "450 dk"
     // },
     weight: "уточняется",
-    image: "images/tom-yum.jpg",
+    image: "images/tom-yum.webp",
     spicy: true,
     hit: true,
     ru: {
@@ -107,7 +107,7 @@ const MENU = [
     category: "soups",
     price: 22,
     weight: "уточняется",
-    image: "images/pho-bo.jpg",
+    image: "images/pho-bo.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -132,7 +132,7 @@ const MENU = [
     category: "soups",
     price: 19,
     weight: "уточняется",
-    image: "images/pho-ga.jpg",
+    image: "images/pho-ga.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -157,7 +157,7 @@ const MENU = [
     category: "soups",
     price: 24,
     weight: "уточняется",
-    image: "images/pho-tom.jpg",
+    image: "images/pho-tom.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -182,7 +182,7 @@ const MENU = [
     category: "soups",
     price: 18,
     weight: "уточняется",
-    image: "images/pho-tofu.jpg",
+    image: "images/pho-tofu.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -207,7 +207,7 @@ const MENU = [
     category: "soups",
     price: 12,
     weight: "уточняется",
-    image: "images/mi-tom-ga.jpg",
+    image: "images/mi-tom-ga.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -232,7 +232,7 @@ const MENU = [
     category: "noodles",
     price: 19,
     weight: "уточняется",
-    image: "images/mi-xao-all.jpg",
+    image: "images/mi-xao-all.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -257,7 +257,7 @@ const MENU = [
     category: "noodles",
     price: 21,
     weight: "уточняется",
-    image: "images/mi-tom-beef.jpg",
+    image: "images/mi-tom-beef.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -282,7 +282,7 @@ const MENU = [
     category: "noodles",
     price: 23,
     weight: "уточняется",
-    image: "images/mi-tom-shrimp.jpg",
+    image: "images/mi-tom-shrimp.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -307,7 +307,7 @@ const MENU = [
     category: "noodles",
     price: 21,
     weight: "уточняется",
-    image: "images/pho-sao-chicken.jpg",
+    image: "images/pho-sao-chicken.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -332,7 +332,7 @@ const MENU = [
     category: "noodles",
     price: 22,
     weight: "уточняется",
-    image: "images/pho-xao-bo.jpg",
+    image: "images/pho-xao-bo.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -357,7 +357,7 @@ const MENU = [
     category: "noodles",
     price: 24,
     weight: "уточняется",
-    image: "images/pho-sao-shrimp.jpg",
+    image: "images/pho-sao-shrimp.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -382,7 +382,7 @@ const MENU = [
     category: "noodles",
     price: 28,
     weight: "уточняется",
-    image: "images/pho-sao-mix.jpg",
+    image: "images/pho-sao-mix.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -407,7 +407,7 @@ const MENU = [
     category: "noodles",
     price: 21,
     weight: "уточняется",
-    image: "images/mien-chicken.jpg",
+    image: "images/mien-chicken.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -432,7 +432,7 @@ const MENU = [
     category: "noodles",
     price: 23,
     weight: "уточняется",
-    image: "images/mien-beef.jpg",
+    image: "images/mien-beef.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -457,7 +457,7 @@ const MENU = [
     category: "noodles",
     price: 24,
     weight: "уточняется",
-    image: "images/mien-xao-tom.jpg",
+    image: "images/mien-xao-tom.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -482,7 +482,7 @@ const MENU = [
     category: "noodles",
     price: 20,
     weight: "уточняется",
-    image: "images/mi-wok.jpg",
+    image: "images/mi-wok.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -507,7 +507,7 @@ const MENU = [
     category: "noodles",
     price: 22,
     weight: "уточняется",
-    image: "images/wok-beef.jpg",
+    image: "images/wok-beef.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -532,7 +532,7 @@ const MENU = [
     category: "noodles",
     price: 24,
     weight: "уточняется",
-    image: "images/udon-beef-unagi.jpg",
+    image: "images/udon-beef-unagi.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -557,7 +557,7 @@ const MENU = [
     category: "noodles",
     price: 24,
     weight: "уточняется",
-    image: "images/udon-shrimp-curry.jpg",
+    image: "images/udon-shrimp-curry.webp",
     spicy: true,
     hit: false,
     ru: {
@@ -582,7 +582,7 @@ const MENU = [
     category: "noodles",
     price: 22,
     weight: "уточняется",
-    image: "images/udon-chicken-curry.jpg",
+    image: "images/udon-chicken-curry.webp",
     spicy: true,
     hit: false,
     ru: {
@@ -607,7 +607,7 @@ const MENU = [
     category: "bowls",
     price: 18,
     weight: "уточняется",
-    image: "images/mi-chon-chicken.jpg",
+    image: "images/mi-chon-chicken.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -632,7 +632,7 @@ const MENU = [
     category: "bowls",
     price: 20,
     weight: "уточняется",
-    image: "images/mi-chon-beef.jpg",
+    image: "images/mi-chon-beef.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -657,7 +657,7 @@ const MENU = [
     category: "bowls",
     price: 22,
     weight: "уточняется",
-    image: "images/mi-chon-shrimp.jpg",
+    image: "images/mi-chon-shrimp.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -682,7 +682,7 @@ const MENU = [
     category: "bowls",
     price: null,
     weight: "уточняется",
-    image: "images/com-tron.jpg",
+    image: "images/com-tron.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -707,7 +707,7 @@ const MENU = [
     category: "bowls",
     price: null,
     weight: "уточняется",
-    image: "images/com-chon-beef.jpg",
+    image: "images/com-chon-beef.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -732,7 +732,7 @@ const MENU = [
     category: "bowls",
     price: null,
     weight: "уточняется",
-    image: "images/com-chon-chicken.jpg",
+    image: "images/com-chon-chicken.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -757,7 +757,7 @@ const MENU = [
     category: "rice",
     price: null,
     weight: "уточняется",
-    image: "images/com-rang.jpg",
+    image: "images/com-rang.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -782,7 +782,7 @@ const MENU = [
     category: "rice",
     price: null,
     weight: "уточняется",
-    image: "images/com-rang-beef.jpg",
+    image: "images/com-rang-beef.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -807,7 +807,7 @@ const MENU = [
     category: "rice",
     price: null,
     weight: "уточняется",
-    image: "images/com-rang-shrimp.jpg",
+    image: "images/com-rang-shrimp.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -832,7 +832,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/bun-cha.jpg",
+    image: "images/bun-cha.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -857,7 +857,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/bun-cha-nem.jpg",
+    image: "images/bun-cha-nem.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -882,7 +882,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/bun-nem.jpg",
+    image: "images/bun-nem.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -907,7 +907,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/thit-nuong.jpg",
+    image: "images/thit-nuong.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -932,7 +932,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/bo-luc-lac.jpg",
+    image: "images/bo-luc-lac.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -957,7 +957,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/bo-xao.jpg",
+    image: "images/bo-xao.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -982,7 +982,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/ga-xao.jpg",
+    image: "images/ga-xao.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1007,7 +1007,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/hai-san.jpg",
+    image: "images/hai-san.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1033,7 +1033,7 @@ const MENU = [
     category: "hot",
     price: 17,
     weight: "уточняется",
-    image: "images/ga-sweet-chili.jpg",
+    image: "images/ga-sweet-chili.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -1058,7 +1058,7 @@ const MENU = [
     category: "hot",
     price: 19,
     weight: "уточняется",
-    image: "images/ga-mat-ong.jpg",
+    image: "images/ga-mat-ong.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1083,7 +1083,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/chicken-cam.jpg",
+    image: "images/chicken-cam.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1108,7 +1108,7 @@ const MENU = [
     category: "hot",
     price: 21,
     weight: "уточняется",
-    image: "images/chicken-kai.jpg",
+    image: "images/chicken-kai.webp",
     spicy: true,
     hit: false,
     ru: {
@@ -1133,7 +1133,7 @@ const MENU = [
     category: "hot",
     price: 23,
     weight: "уточняется",
-    image: "images/tom-mat-ong.jpg",
+    image: "images/tom-mat-ong.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1158,7 +1158,7 @@ const MENU = [
     category: "hot",
     price: 23,
     weight: "уточняется",
-    image: "images/shrimp-mayo.jpg",
+    image: "images/shrimp-mayo.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -1183,7 +1183,7 @@ const MENU = [
     category: "hot",
     price: 24,
     weight: "уточняется",
-    image: "images/beef-kai.jpg",
+    image: "images/beef-kai.webp",
     spicy: true,
     hit: false,
     ru: {
@@ -1208,7 +1208,7 @@ const MENU = [
     category: "hot",
     price: 25,
     weight: "уточняется",
-    image: "images/bo-mat-ong.jpg",
+    image: "images/bo-mat-ong.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1233,7 +1233,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/fish-mayo.jpg",
+    image: "images/fish-mayo.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1258,7 +1258,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/fish-unagi.jpg",
+    image: "images/fish-unagi.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1283,7 +1283,7 @@ const MENU = [
     category: "hot",
     price: 17,
     weight: "уточняется",
-    image: "images/tofu-sweet-chili.jpg",
+    image: "images/tofu-sweet-chili.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1308,7 +1308,7 @@ const MENU = [
     category: "hot",
     price: 18,
     weight: "уточняется",
-    image: "images/ca-tim-cay.jpg",
+    image: "images/ca-tim-cay.webp",
     spicy: true,
     hit: false,
     ru: {
@@ -1333,7 +1333,7 @@ const MENU = [
     category: "hot",
     price: null,
     weight: "уточняется",
-    image: "images/broccoli-crispy.jpg",
+    image: "images/broccoli-crispy.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1359,7 +1359,7 @@ const MENU = [
     category: "salads",
     price: null,
     weight: "уточняется",
-    image: "images/nom-tom.jpg",
+    image: "images/nom-tom.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1384,7 +1384,7 @@ const MENU = [
     category: "salads",
     price: null,
     weight: "уточняется",
-    image: "images/nom-ga.jpg",
+    image: "images/nom-ga.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1409,7 +1409,7 @@ const MENU = [
     category: "salads",
     price: null,
     weight: "уточняется",
-    image: "images/smashed-cucumbers.jpg",
+    image: "images/smashed-cucumbers.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1434,7 +1434,7 @@ const MENU = [
     category: "extra",
     price: null,
     weight: "уточняется",
-    image: "images/white-rice.jpg",
+    image: "images/white-rice.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1459,7 +1459,7 @@ const MENU = [
     category: "extra",
     price: null,
     weight: "уточняется",
-    image: "images/com-rang-trung.jpg",
+    image: "images/com-rang-trung.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1484,7 +1484,7 @@ const MENU = [
     category: "extra",
     price: null,
     weight: "уточняется",
-    image: "images/banh-bot-mi.jpg",
+    image: "images/banh-bot-mi.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1509,7 +1509,7 @@ const MENU = [
     category: "kids",
     price: null,
     weight: "уточняется",
-    image: "images/strips-fries.jpg",
+    image: "images/strips-fries.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1534,7 +1534,7 @@ const MENU = [
     category: "kids",
     price: null,
     weight: "уточняется",
-    image: "images/thit-nuong-fries.jpg",
+    image: "images/thit-nuong-fries.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1559,7 +1559,7 @@ const MENU = [
   //   category: "kids",
   //   price: null,
   //   weight: "уточняется",
-  //   image: "images/octopus-in-the-pool.jpg",
+  //   image: "images/octopus-in-the-pool.webp",
   //   spicy: false,
   //   hit: false,
   //   ru: {
@@ -1584,7 +1584,7 @@ const MENU = [
     category: "kids",
     price: null,
     weight: "уточняется",
-    image: "images/sleeping-bear.jpg",
+    image: "images/sleeping-bear.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1609,7 +1609,7 @@ const MENU = [
     category: "kids",
     price: null,
     weight: "уточняется",
-    image: "images/octopus-in-the-pool.jpg",
+    image: "images/octopus-in-the-pool.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1634,7 +1634,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/banh-bao.jpg",
+    image: "images/banh-bao.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -1659,7 +1659,7 @@ const MENU = [
   //   category: "snacks",
   //   price: null,
   //   weight: "уточняется",
-  //   image: "images/corn-dog.jpg",
+  //   image: "images/corn-dog.webp",
   //   spicy: false,
   //   hit: true,
   //   ru: {
@@ -1684,7 +1684,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/batat-frie.jpg",
+    image: "images/batat-frie.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -1709,7 +1709,7 @@ const MENU = [
   //   category: "snacks",
   //   price: null,
   //   weight: "уточняется",
-  //   image: "images/bao-burger-chicken.jpg",
+  //   image: "images/bao-burger-chicken.webp",
   //   spicy: false,
   //   hit: true,
   //   ru: {
@@ -1734,7 +1734,7 @@ const MENU = [
   //   category: "snacks",
   //   price: null,
   //   weight: "уточняется",
-  //   image: "images/bao-burger-shrimp.jpg",
+  //   image: "images/bao-burger-shrimp.webp",
   //   spicy: false,
   //   hit: false,
   //   ru: {
@@ -1759,7 +1759,7 @@ const MENU = [
     category: "snacks",
     price: 12,
     weight: "уточняется",
-    image: "images/nem.jpg",
+    image: "images/nem.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -1784,7 +1784,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/nem-hai-san.jpg",
+    image: "images/nem-hai-san.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1809,7 +1809,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/goi-cuon.jpg",
+    image: "images/goi-cuon.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -1835,7 +1835,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/tom-chien.jpg",
+    image: "images/tom-chien.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1860,7 +1860,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/corn-dog.jpg",
+    image: "images/corn-dog.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1885,7 +1885,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/xuc-xich-nuong.jpg",
+    image: "images/xuc-xich-nuong.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1910,7 +1910,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/pho-mai-chien.jpg",
+    image: "images/pho-mai-chien.webp",
     spicy: false,
     hit: true,
     ru: {
@@ -1935,7 +1935,7 @@ const MENU = [
     category: "snacks",
     price: null,
     weight: "уточняется",
-    image: "images/beer-set.jpg",
+    image: "images/beer-set.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -1961,7 +1961,7 @@ const MENU = [
     category: "desserts",
     price: null,
     weight: "уточняется",
-    image: "images/dessert-coming-soon.jpg",
+    image: "images/dessert-coming-soon.webp",
     spicy: false,
     hit: false,
     ru: {
