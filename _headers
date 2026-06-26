@@ -1,0 +1,25 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/index.html
+  Cache-Control: no-cache
+
+/*.html
+  Cache-Control: no-cache
+
+/menu-data.js
+  Cache-Control: no-cache
+
+/script.js
+  Cache-Control: no-cache
+
+/style.css
+  Cache-Control: no-cache
+
+/service-worker.js
+  Cache-Control: no-cache
+
+/images/*
+  Cache-Control: public, max-age=21600

@@ -181,7 +181,6 @@ const MENU = [
   },
   {
     id: "pho-dau",
-    categories: ["soups", "vegan"],
     category: "soups",
     price: 18,
     weight: "уточняется",
@@ -857,7 +856,6 @@ const MENU = [
   },
   {
     id: "bun-cha-nem",
-    categories: ["hot", "sets"],
     category: "hot",
     price: null,
     weight: "уточняется",
@@ -1284,7 +1282,6 @@ const MENU = [
   },
   {
     id: "tofu-sweet-chili",
-    categories: ["hot", "vegan"],
     category: "hot",
     price: 16,
     weight: "уточняется",
@@ -1310,7 +1307,6 @@ const MENU = [
   },
   {
     id: "eggplant-kai",
-    categories: ["hot", "vegan"],
     category: "hot",
     price: 15,
     weight: "уточняется",
@@ -1336,7 +1332,6 @@ const MENU = [
   },
   {
     id: "crispy-broccoli",
-    categories: ["hot", "vegan"],
     category: "hot",
     price: null,
     weight: "уточняется",
@@ -1413,7 +1408,6 @@ const MENU = [
   },
   {
     id: "smashed-cucumbers",
-    categories: ["salads", "vegan"],
     category: "salads",
     price: null,
     weight: "уточняется",
@@ -1439,7 +1433,6 @@ const MENU = [
   },
   {
     id: "white-rice",
-    categories: ["extra", "vegan"],
     category: "extra",
     price: 2.5,
     weight: "уточняется",
@@ -1465,7 +1458,6 @@ const MENU = [
   },
   {
     id: "fried-rice-egg",
-    categories: ["extra", "vegan"],
     category: "extra",
     price: 3.5,
     weight: "уточняется",
@@ -1491,7 +1483,6 @@ const MENU = [
   },
   {
     id: "banh-bot-mi",
-    categories: ["extra", "vegan"],
     category: "extra",
     price: null,
     weight: "уточняется",
@@ -1943,7 +1934,6 @@ const MENU = [
   },
   {
     id: "beer-set",
-    categories: ["snacks", "sets"],
     category: "snacks",
     price: null,
     weight: "уточняется",
@@ -1995,3 +1985,39 @@ const MENU = [
   }
 
 ];
+
+
+/*
+  Дополнительная категоризация.
+  Теперь блюдо может быть в нескольких категориях:
+  category: "soups" или categories: ["soups", "vegan"]
+*/
+(function applyExtraCategories() {
+  const extraById = {
+    "pho-dau": ["vegan"],
+    "tofu-sweet-chili": ["vegan"],
+    "eggplant-kai": ["vegan"],
+    "crispy-broccoli": ["vegan"],
+    "white-rice": ["vegan"],
+    "banh-bot-mi": ["vegan"],
+    "smashed-cucumbers": ["vegan"],
+    "beer-set": ["sets"],
+    "sharing-set": ["sets"],
+    "set-for-two": ["sets"]
+  };
+
+  MENU.forEach((dish) => {
+    const base = Array.isArray(dish.categories)
+      ? dish.categories
+      : dish.category
+        ? [dish.category]
+        : [];
+
+    const extra = extraById[dish.id] || [];
+    dish.categories = Array.from(new Set([...base, ...extra]));
+
+    if (!dish.category && dish.categories.length) {
+      dish.category = dish.categories[0];
+    }
+  });
+})();

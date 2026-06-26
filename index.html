@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="theme-color" content="#101010" />
+  <meta name="description" content="PHONIKS QR menu" />
   <title>PHONIKS Menu</title>
   <link rel="manifest" href="manifest.json" />
+  <link rel="preload" href="style.css" as="style" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="topSentinel" class="top-sentinel" aria-hidden="true"></div>
-  <header class="hero" id="siteHeader">
-    <div class="hero__top" id="heroTop">
+  <header class="hero" id="hero">
+    <div class="hero__top" id="heroIntro">
       <div>
         <p class="eyebrow">Born from fire</p>
         <h1>PHONIKS</h1>
@@ -27,18 +28,19 @@
       <button class="lang" data-lang="zh">🇨🇳 中文</button>
     </div>
 
-    <div class="search-wrap" id="searchWrap">
-      <input id="searchInput" type="search" placeholder="Поиск по меню" autocomplete="off" />
-      <button class="search-close" id="searchClose" type="button" aria-label="Закрыть поиск">×</button>
+    <div class="menu-toolbar" id="menuToolbar">
+      <button class="search-toggle" id="searchToggle" type="button" aria-label="Открыть поиск">⌕</button>
+      <nav class="chips" id="categoryChips" aria-label="Menu categories"></nav>
     </div>
 
-    <div class="category-row" id="categoryRow">
-      <button class="search-toggle" id="searchToggle" type="button" aria-label="Открыть поиск">🔎</button>
-      <nav class="chips" id="categoryChips" aria-label="Menu categories"></nav>
+    <div class="search-wrap" id="searchWrap" aria-hidden="true">
+      <input id="searchInput" type="search" placeholder="Поиск по меню" autocomplete="off" inputmode="search" />
+      <button class="search-close" id="searchClose" type="button" aria-label="Закрыть поиск">×</button>
     </div>
   </header>
 
   <main id="menuStart">
+    <p class="photo-note" id="photoNote">Некоторые блюда пока могут быть показаны без своего портрета</p>
     <section class="menu-grid" id="menuGrid"></section>
     <p class="empty" id="emptyState" hidden>Ничего не найдено</p>
   </main>
@@ -61,8 +63,7 @@
   <template id="dishTemplate">
     <article class="dish-card">
       <button class="dish-image-btn" type="button">
-        <img class="dish-image" alt="" loading="lazy" decoding="async" />
-        <span class="photo-note" hidden></span>
+        <img class="dish-image" alt="" loading="lazy" decoding="async" width="900" height="675" />
       </button>
       <div class="dish-body">
         <div class="dish-head">

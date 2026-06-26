@@ -1,14 +1,15 @@
-const CACHE_NAME = "phoniks-menu-v5";
-const CORE_FILES = [
+const CACHE_NAME = "phoniks-menu-production-card-size-v2";
+const APP_SHELL = [
   "./",
   "./index.html",
   "./style.css",
   "./script.js",
+  "./menu-data.js",
   "./manifest.json"
 ];
 
 self.addEventListener("install", event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(CORE_FILES)));
+  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(APP_SHELL)));
   self.skipWaiting();
 });
 
@@ -20,46 +21,43 @@ self.addEventListener("activate", event => {
 });
 
 self.addEventListener("fetch", event => {
-  const request = event.request;
-  if (request.method !== "GET") return;
+  const req = event.request;
+  if (req.method !== "GET") return;
 
-  const url = new URL(request.url);
-  const isImage = request.destination === "image";
-  const isMenuData = url.pathname.endsWith("menu-data.js");
+  const url = new URL(req.url);
 
-  // menu-data.js должен обновляться максимально свежо, чтобы цены и блюда не залипали.
-  if (isMenuData) {
-    event.respondWith(fetch(request).catch(() => caches.match(request)));
+  // Главные файлы всегда сначала из сети, чтобы меню на Netlify обновлялось без сюрпризов.
+  if (url.origin === location.origin && /\.(html|js|css|json)$/.test(url.pathname)) {
+    event.respondWith(networkFirst(req));
     return;
   }
 
-  // Картинки: сначала кэш для повторного открытия, потом обновление в фоне.
-  if (isImage) {
-    event.respondWith(
-      caches.match(request).then(cached => {
-        const fetchPromise = fetch(request).then(response => {
-          if (response && response.status === 200) {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
-          }
-          return response;
-        }).catch(() => cached);
-        return cached || fetchPromise;
-      })
-    );
+  // Изображения можно отдавать из кэша, но обновлять в фоне.
+  if (url.origin === location.origin && /\.(png|jpg|jpeg|webp|gif|svg|ico)$/.test(url.pathname)) {
+    event.respondWith(staleWhileRevalidate(req));
     return;
   }
 
-  // Остальное: сеть в приоритете, чтобы правки быстро доходили до гостей.
-  event.respondWith(
-    fetch(request)
-      .then(response => {
-        if (response && response.status === 200) {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
-        }
-        return response;
-      })
-      .catch(() => caches.match(request))
-  );
+  event.respondWith(networkFirst(req));
 });
+
+async function networkFirst(request) {
+  const cache = await caches.open(CACHE_NAME);
+  try {
+    const response = await fetch(request, { cache: "no-cache" });
+    if (response && response.status === 200) cache.put(request, response.clone());
+    return response;
+  } catch (error) {
+    return (await cache.match(request)) || Response.error();
+  }
+}
+
+async function staleWhileRevalidate(request) {
+  const cache = await caches.open(CACHE_NAME);
+  const cached = await cache.match(request);
+  const fresh = fetch(request).then(response => {
+    if (response && response.status === 200) cache.put(request, response.clone());
+    return response;
+  }).catch(() => null);
+  return cached || fresh || Response.error();
+}
