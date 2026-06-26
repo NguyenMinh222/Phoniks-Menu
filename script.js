@@ -60,6 +60,8 @@ let deferredPrompt = null;
 let isSearchMode = false;
 let ticking = false;
 let lastRenderToken = 0;
+let isHeaderCompact = false;
+let isClosingSearch = false;
 
 const grid = document.getElementById("menuGrid");
 const template = document.getElementById("dishTemplate");
@@ -134,7 +136,7 @@ function renderCategories() {
     btn.type = "button";
     btn.onclick = () => {
       currentCategory = key;
-      closeSearchMode(false);
+      closeSearchMode(true);
       searchValue = "";
       searchInput.value = "";
       renderCategories();
@@ -147,7 +149,7 @@ function renderCategories() {
 }
 
 function scrollMenuToStart() {
-  requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+  requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "auto" }));
 }
 
 function normalizeQuery(value) {
@@ -155,7 +157,6 @@ function normalizeQuery(value) {
 }
 
 function renderMenu() {
-  const token = ++lastRenderToken;
   const rawSearch = searchValue;
   const hasOnlySpaces = rawSearch.length > 0 && rawSearch.trim().length === 0;
   const query = normalizeQuery(rawSearch);
@@ -169,27 +170,13 @@ function renderMenu() {
     return categoryOk && (!query || haystack.includes(query));
   });
 
-  grid.innerHTML = "";
+  grid.replaceChildren();
   emptyState.hidden = filtered.length > 0;
 
   const fragment = document.createDocumentFragment();
-  const firstBatch = filtered.slice(0, 8);
-  firstBatch.forEach((dish, index) => fragment.appendChild(createDishNode(dish, index)));
+  filtered.forEach((dish, index) => fragment.appendChild(createDishNode(dish, index)));
   grid.appendChild(fragment);
-  preloadFirstImages(firstBatch);
-
-  if (filtered.length > 8) {
-    let index = 8;
-    const renderChunk = () => {
-      if (token !== lastRenderToken) return;
-      const chunk = document.createDocumentFragment();
-      const end = Math.min(index + 10, filtered.length);
-      for (; index < end; index++) chunk.appendChild(createDishNode(filtered[index], index));
-      grid.appendChild(chunk);
-      if (index < filtered.length) requestAnimationFrame(renderChunk);
-    };
-    requestAnimationFrame(renderChunk);
-  }
+  preloadFirstImages(filtered);
 }
 
 function createDishNode(dish, index) {
@@ -208,7 +195,6 @@ function createDishNode(dish, index) {
   }
 
   img.alt = t.name;
-  img.onload = () => img.classList.add("loaded");
   img.onerror = () => showPhotoPlaceholder(img, note, t.name);
 
   if (src) img.src = src;
@@ -242,7 +228,6 @@ function createDishNode(dish, index) {
 function showPhotoPlaceholder(img, note, title) {
   img.src = makePlaceholder(title);
   img.alt = `${title} — photo placeholder`;
-  img.classList.add("loaded");
   if (note) {
     note.textContent = TEXT[currentLang].photoNote;
     note.hidden = false;
@@ -287,23 +272,34 @@ searchInput.addEventListener("input", e => {
   }, 80);
 });
 
-searchInput.addEventListener("focus", () => openSearchMode());
+searchInput.addEventListener("focus", () => {
+  if (!isClosingSearch) openSearchMode();
+});
 searchToggle.addEventListener("click", () => openSearchMode(true));
-searchClose.addEventListener("click", () => {
-  searchValue = "";
-  searchInput.value = "";
-  closeSearchMode(true);
-  renderMenu();
+searchClose.addEventListener("pointerdown", e => {
+  e.preventDefault();
+  e.stopPropagation();
+});
+searchClose.addEventListener("click", e => {
+  e.preventDefault();
+  e.stopPropagation();
+  clearAndCloseSearch();
 });
 
 document.addEventListener("keydown", e => {
   if (e.key === "Escape" && isSearchMode) {
-    searchValue = "";
-    searchInput.value = "";
-    closeSearchMode(true);
-    renderMenu();
+    clearAndCloseSearch();
   }
 });
+
+function clearAndCloseSearch() {
+  isClosingSearch = true;
+  searchValue = "";
+  searchInput.value = "";
+  closeSearchMode(true);
+  renderMenu();
+  window.setTimeout(() => { isClosingSearch = false; }, 80);
+}
 
 function openSearchMode(focus = false) {
   if (isSearchMode) {
@@ -317,11 +313,10 @@ function openSearchMode(focus = false) {
 }
 
 function closeSearchMode(blur = true) {
-  if (!isSearchMode) return;
   isSearchMode = false;
   siteHeader.classList.remove("search-mode");
   if (blur) searchInput.blur();
-  updateHeaderCompact();
+  requestAnimationFrame(updateHeaderCompact);
 }
 
 function makePlaceholder(title) {
@@ -344,7 +339,10 @@ function renderQr() {
 
 function updateHeaderCompact() {
   if (isSearchMode) return;
-  siteHeader.classList.toggle("is-compact", window.scrollY > 84);
+  const shouldCompact = isHeaderCompact ? window.scrollY > 42 : window.scrollY > 96;
+  if (shouldCompact === isHeaderCompact) return;
+  isHeaderCompact = shouldCompact;
+  siteHeader.classList.toggle("is-compact", isHeaderCompact);
 }
 
 window.addEventListener("scroll", () => {

@@ -30,10 +30,7 @@ body {
   background: var(--header-bg);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
-  transform: translateZ(0);
-  will-change: transform;
-  transition: padding .22s ease, background .22s ease;
-  contain: layout paint;
+  transition: padding .18s ease, background .18s ease;
 }
 
 .hero__top {
@@ -41,20 +38,11 @@ body {
   justify-content: space-between;
   gap: 12px;
   align-items: start;
-  max-height: 84px;
-  opacity: 1;
-  transform: translateY(0);
-  overflow: hidden;
-  transition: max-height .24s ease, opacity .18s ease, transform .24s ease, margin .24s ease;
 }
 
 .hero.is-compact { padding-top: 8px; }
 .hero.is-compact .hero__top {
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-8px);
-  margin: 0;
-  pointer-events: none;
+  display: none;
 }
 
 .eyebrow { margin: 0 0 4px; color: var(--accent2); text-transform: uppercase; letter-spacing: .18em; font-size: 11px; }
@@ -82,10 +70,6 @@ h1 { margin: 0; font-size: 36px; letter-spacing: -.05em; line-height: .9; }
 .chips::-webkit-scrollbar { display: none; }
 
 .language-switcher {
-  max-height: 58px;
-  opacity: 1;
-  transform: translateY(0);
-  transition: max-height .22s ease, opacity .18s ease, transform .22s ease, padding .22s ease;
 }
 
 .lang,
@@ -107,10 +91,6 @@ h1 { margin: 0; font-size: 36px; letter-spacing: -.05em; line-height: .9; }
 .search-wrap {
   position: relative;
   margin-top: 10px;
-  max-height: 58px;
-  opacity: 1;
-  transform: translateY(0);
-  transition: max-height .22s ease, opacity .18s ease, transform .22s ease, margin .22s ease;
 }
 #searchInput {
   width: 100%;
@@ -142,7 +122,6 @@ h1 { margin: 0; font-size: 36px; letter-spacing: -.05em; line-height: .9; }
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: opacity .18s ease, transform .22s ease, max-height .22s ease;
 }
 .search-toggle {
   width: 42px;
@@ -157,12 +136,7 @@ h1 { margin: 0; font-size: 36px; letter-spacing: -.05em; line-height: .9; }
 .chips { flex: 1 1 auto; min-width: 0; }
 
 .hero.is-compact .search-wrap {
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-8px);
-  margin-top: 0;
-  overflow: hidden;
-  pointer-events: none;
+  display: none;
 }
 
 .hero.search-mode {
@@ -171,20 +145,11 @@ h1 { margin: 0; font-size: 36px; letter-spacing: -.05em; line-height: .9; }
 .hero.search-mode .hero__top,
 .hero.search-mode .language-switcher,
 .hero.search-mode .category-row {
-  max-height: 0;
-  opacity: 0;
-  transform: translateY(-8px);
-  overflow: hidden;
-  padding-top: 0;
-  padding-bottom: 0;
-  pointer-events: none;
+  display: none;
 }
 .hero.search-mode .search-wrap {
-  max-height: 62px;
-  opacity: 1;
-  transform: translateY(0);
+  display: block;
   margin-top: 0;
-  pointer-events: auto;
 }
 
 main { padding: 16px; }
@@ -201,8 +166,6 @@ main { padding: 16px; }
   border-radius: var(--radius);
   background: rgba(23,23,23,.94);
   box-shadow: 0 16px 34px rgba(0,0,0,.25);
-  content-visibility: auto;
-  contain-intrinsic-size: 520px;
 }
 .dish-image-btn {
   position: relative;
@@ -210,25 +173,16 @@ main { padding: 16px; }
   padding: 0;
   width: 100%;
   border: 0;
-  background:
-    linear-gradient(90deg, rgba(255,255,255,.05), rgba(255,255,255,.11), rgba(255,255,255,.05)),
-    #222;
-  background-size: 220% 100%;
-  animation: skeleton 1.2s ease-in-out infinite;
+  background: #222;
   cursor: zoom-in;
   overflow: hidden;
 }
-.dish-image-btn:has(.dish-image.loaded) { animation: none; background: #222; }
 .dish-image {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
-  opacity: 0;
-  transform: scale(1.01);
-  transition: opacity .22s ease, transform .32s ease;
 }
-.dish-image.loaded { opacity: 1; transform: scale(1); }
 .photo-note {
   position: absolute;
   left: 10px;
@@ -279,10 +233,6 @@ main { padding: 16px; }
 .lunch-mini { position: absolute; inset: 0; display: grid; place-items: center; opacity: 0; background: linear-gradient(90deg,#ff3b1f,#ff6b00); color: white; font-weight: 800; font-size: 14px; transition: opacity .22s ease; }
 .lunch-banner-collapsed .lunch-mini { opacity: 1; }
 
-@keyframes skeleton {
-  0% { background-position: 120% 0; }
-  100% { background-position: -120% 0; }
-}
 
 @media (min-width: 720px) {
   .menu-grid { grid-template-columns: repeat(2, 1fr); }
