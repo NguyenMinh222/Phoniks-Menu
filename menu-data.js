@@ -14,12 +14,12 @@ const CATEGORIES = {
   hot: { ru: "Горячее", en: "Hot dishes", vn: "Món nóng", zh: "热菜" },
   salads: { ru: "Салаты", en: "Salads", vn: "Gỏi", zh: "沙拉" },
   snacks: { ru: "Закуски", en: "Snacks", vn: "Món ăn nhẹ", zh: "小吃" },
-  vegan: { ru: "Веганское", en: "Vegan", vn: "Món chay", zh: "纯素" },
-  sets: { ru: "Сеты для двоих", en: "Sets for two", vn: "Set cho hai người", zh: "双人套餐" },
   kids: { ru: "Детское", en: "Kids", vn: "Trẻ em", zh: "儿童餐" },
   extra: { ru: "Дополнительно", en: "Extra", vn: "Món thêm", zh: "加点" },
   desserts: { ru: "Десерты", en: "Desserts", vn: "Tráng miệng", zh: "甜点" },
-  drinks: { ru: "Напитки", en: "Drinks", vn: "Đồ uống", zh: "饮品" }
+  drinks: { ru: "Напитки", en: "Drinks", vn: "Đồ uống", zh: "饮品" },
+  vegan: { ru: "Веганское", en: "Vegan", vn: "Món chay", zh: "素食" },
+  sets: { ru: "Сеты для двоих", en: "Sets for two", vn: "Set cho hai người", zh: "双人套餐" }
 };
 
 const MENU = [
@@ -181,7 +181,8 @@ const MENU = [
   },
   {
     id: "pho-dau",
-    category: ["soups", "vegan"],
+    categories: ["soups", "vegan"],
+    category: "soups",
     price: 18,
     weight: "уточняется",
     image: "images/pho-tofu.webp",
@@ -856,6 +857,7 @@ const MENU = [
   },
   {
     id: "bun-cha-nem",
+    categories: ["hot", "sets"],
     category: "hot",
     price: null,
     weight: "уточняется",
@@ -1282,7 +1284,8 @@ const MENU = [
   },
   {
     id: "tofu-sweet-chili",
-    category: ["hot", "vegan"],
+    categories: ["hot", "vegan"],
+    category: "hot",
     price: 16,
     weight: "уточняется",
     image: "images/tofu-sweet-chili.webp",
@@ -1307,7 +1310,8 @@ const MENU = [
   },
   {
     id: "eggplant-kai",
-    category: ["hot", "vegan"],
+    categories: ["hot", "vegan"],
+    category: "hot",
     price: 15,
     weight: "уточняется",
     image: "images/ca-tim-cay.webp",
@@ -1332,7 +1336,8 @@ const MENU = [
   },
   {
     id: "crispy-broccoli",
-    category: ["hot", "vegan"],
+    categories: ["hot", "vegan"],
+    category: "hot",
     price: null,
     weight: "уточняется",
     image: "images/broccoli-crispy.webp",
@@ -1408,6 +1413,7 @@ const MENU = [
   },
   {
     id: "smashed-cucumbers",
+    categories: ["salads", "vegan"],
     category: "salads",
     price: null,
     weight: "уточняется",
@@ -1433,7 +1439,8 @@ const MENU = [
   },
   {
     id: "white-rice",
-    category: ["extra", "vegan"],
+    categories: ["extra", "vegan"],
+    category: "extra",
     price: 2.5,
     weight: "уточняется",
     image: "images/white-rice.webp",
@@ -1458,6 +1465,7 @@ const MENU = [
   },
   {
     id: "fried-rice-egg",
+    categories: ["extra", "vegan"],
     category: "extra",
     price: 3.5,
     weight: "уточняется",
@@ -1483,6 +1491,7 @@ const MENU = [
   },
   {
     id: "banh-bot-mi",
+    categories: ["extra", "vegan"],
     category: "extra",
     price: null,
     weight: "уточняется",
@@ -1934,7 +1943,8 @@ const MENU = [
   },
   {
     id: "beer-set",
-    category: ["snacks", "sets"],
+    categories: ["snacks", "sets"],
+    category: "snacks",
     price: null,
     weight: "уточняется",
     image: "images/beer-set.webp",

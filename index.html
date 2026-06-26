@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="hero" id="siteHeader">
-    <div class="hero__top">
+    <div class="hero__top" id="heroTop">
       <div>
         <p class="eyebrow">Born from fire</p>
         <h1>PHONIKS</h1>
@@ -19,33 +19,16 @@
       <button class="install-btn" id="installBtn" hidden>Установить</button>
     </div>
 
-    <div class="language-switcher" aria-label="Language switcher">
+    <div class="language-switcher" id="languageSwitcher" aria-label="Language switcher">
       <button class="lang active" data-lang="ru">🇷🇺 Рус</button>
       <button class="lang" data-lang="en">🇬🇧 Eng</button>
       <button class="lang" data-lang="vn">🇻🇳 Việt</button>
       <button class="lang" data-lang="zh">🇨🇳 中文</button>
     </div>
 
-    <!-- <section
-      class="lunch-banner"
-      id="lunchBanner"
-      aria-label="Обеденное меню PHONIKS">
-
-      <img
-        src="images/tomyum.png"
-        alt="Обеденное меню PHONIKS"
-        loading="lazy"
-        onerror="this.closest('.lunch-banner').hidden = true">
-
-      <div class="lunch-mini">
-        🍜 ОБЕДЕННОЕ МЕНЮ (Lunch menu) • 12:00–16:00
-      </div>
-
-    </section> -->
-
-
     <div class="search-wrap" id="searchWrap">
       <input id="searchInput" type="search" placeholder="Поиск по меню" autocomplete="off" />
+      <button class="search-close" id="searchClose" type="button" aria-label="Закрыть поиск">×</button>
     </div>
 
     <div class="category-row" id="categoryRow">
@@ -54,7 +37,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="menuStart">
     <section class="menu-grid" id="menuGrid"></section>
     <p class="empty" id="emptyState" hidden>Ничего не найдено</p>
   </main>
@@ -77,7 +60,7 @@
   <template id="dishTemplate">
     <article class="dish-card">
       <button class="dish-image-btn" type="button">
-        <img class="dish-image" alt="" loading="lazy" decoding="async" />
+        <img class="dish-image" alt="" loading="lazy" decoding="async" width="900" height="675" />
         <span class="photo-note" hidden></span>
       </button>
       <div class="dish-body">
