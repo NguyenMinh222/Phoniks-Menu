@@ -261,7 +261,7 @@ const MENU = [
     weight: "Цена",
     image: "images/mi-xao-all.webp",
     spicy: false,
-    hit: false,
+    hit: true,
     ru: {
       name: "Ми Том с курицей",
       description: "Жареная вьетнамская лапша с курицей, луком, грибами, брокколи и пекинской капустой в воке."
@@ -286,7 +286,7 @@ const MENU = [
     weight: "Цена",
     image: "images/mi-tom-beef.webp",
     spicy: false,
-    hit: false,
+    hit: true,
     ru: {
       name: "Ми Том с говядиной",
       description: "Жареная вьетнамская лапша с говядиной, луком, грибами, брокколи и пекинской капустой в воке."
@@ -311,7 +311,7 @@ const MENU = [
     weight: "Цена",
     image: "images/mi-tom-shrimp.webp",
     spicy: false,
-    hit: false,
+    hit: true,
     ru: {
       name: "Ми Том с креветками",
       description: "Жареная вьетнамская лапша с креветками, луком, грибами, брокколи и пекинской капустой в воке."
@@ -561,7 +561,7 @@ const MENU = [
     weight: "Цена",
     image: "images/udon-beef-unagi.webp",
     spicy: false,
-    hit: true,
+    hit: false,
     ru: {
       name: "Удон с говядиной унаги",
       description: "Пшеничная лапша удон с говядиной в сладко-солёном соусе унаги, с луком, шампиньонами, шитаки и луком-пореем."
@@ -1866,20 +1866,20 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Том Чиен (10 шт)",
+      name: "Том Чиен (7 шт)",
       description: "Хрустящие креветки во фритюре."
     },
     en: {
-      name: "Tom Chien (10 pcs)",
+      name: "Tom Chien (7 pcs)",
       description: "Crispy deep-fried shrimp."
     },
     vn: {
-      name: "Tôm Chiên (10 cuốn)",
+      name: "Tôm Chiên (7 cuốn)",
       description: "Tôm chiên giòn."
     },
     zh: {
       name: "炸虾",
-      description: "香脆炸虾。(10个）"
+      description: "香脆炸虾。(7个）"
     }
   },
   {
@@ -1939,7 +1939,7 @@ const MENU = [
     weight: "Цена",
     image: "images/pho-mai-chien.webp",
     spicy: false,
-    hit: true,
+    hit: false,
     ru: {
       name: "Фо Май Чиен",
       description: "Жареный сыр моцарелла с хрустящей корочкой."
@@ -2006,8 +2006,132 @@ const MENU = [
       name: "即将推出",
       description: "PHONIKS 招牌甜点即将上线。"
     }
+  },
+  {
+    id: "vin-drinks",
+    category: "drinks",
+    price: 7,
+    weight: "Цена",
+    image: "images/vinut-drinks.jpg",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Вьетнамские лимонады Vinut",
+      description: "Популярные вьетнамские лимонады с такими вкусами как: манго, личи, кокос, маракуйа, папайа, рамбутан, арбуз, мангустин"
+    },
+    en: {
+      name: "Vietnamese Vinut lemonades",
+      description: "Popular Vietnamese lemonades available in flavors such as mango, lychee, coconut, passion fruit, papaya, rambutan, watermelon, and mangosteen."
+    },
+    vn: {
+      name: "Nước chanh Vinut của Việt Nam",
+      description: "Các loại nước chanh Việt Nam được ưa chuộng với các hương vị như xoài, vải, dừa, chanh dây, đu đủ, chôm chôm, dưa hấu và măng cụt."
+    },
+    zh: {
+      name: "越南 Vinut 柠檬饮料",
+      description: "受欢迎的越南柠檬饮料，口味包括芒果、荔枝、椰子、百香果、木瓜、红毛丹、西瓜和山竹。"
+    }
+  },
+  {
+    id: "tra-khong-do",
+    category: "drinks",
+    price: 7,
+    weight: "Цена",
+    image: "images/khong-do.jpg",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Вьетнамский зеленый чай - Ноль Градусов",
+      description: "Популярный готовый к употреблению зелёный чай во Вьетнаме."
+    },
+    en: {
+      name: "Vietnamese green tea — Zero Degrees",
+      description: "A popular ready-to-drink green tea in Vietnam"
+    },
+    vn: {
+      name: "Trà xanh Việt Nam - Không Độ",
+      description: "Loại trà xanh đóng chai sẵn rất phổ biến tại Việt Nam."
+    },
+    zh: {
+      name: "越南绿茶 — Zero Degrees",
+      description: "在越南非常受欢迎的即饮绿茶。"
+    }
+  },
+  {
+    id: "beer-hanoi",
+    category: "drinks",
+    price: 9,
+    weight: "Цена",
+    image: "images/Bia_HaNoi.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Вьетнаское пиво - Hanoi Beer",
+      description: "Bia Hà Nội (или Hanoi Beer) — культовое разливное и бутылочное светлое пиво столицы Вьетнама, производимое компанией HABECO."
+    },
+    en: {
+      name: "Vietnamese beer — Hanoi Beer",
+      description: "Bia Hà Nội (or Hanoi Beer) is the iconic draft and bottled lager of Vietnam's capital, produced by HABECO"
+    },
+    vn: {
+      name: "Bia Việt Nam — Hà Nội",
+      description: "Bia Hà Nội là loại bia lager biểu tượng của thủ đô Việt Nam, được sản xuất bởi HABECO, có cả dạng bia tươi và bia chai"
+    },
+    zh: {
+      name: "越南啤酒 — 河内",
+      description: "Bia Hà Nội（河内啤酒）是越南首都的标志性拉格啤酒，由 HABECO 生产，提供生啤和瓶装两种形式。"
+    }
+  },
+  {
+    id: "beer-saigon",
+    category: "drinks",
+    price: 10,
+    weight: "Цена",
+    image: "images/bia-saigon.jpg",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Вьетнаское пиво - Saigon Beer",
+      description: "Bia Saigon — флагманское национальное пиво Вьетнама, производимое компанией SABECO."
+    },
+    en: {
+      name: "Vietnamese beer — Saigon Beer",
+      description: "Bia Saigon is Vietnam's flagship national beer, brewed by SABECO"
+    },
+    vn: {
+      name: "Bia Việt Nam — Bia Sài Gòn",
+      description: "Bia Saigon là loại bia quốc dân tiêu biểu của Việt Nam, được sản xuất bởi SABECO."
+    },
+    zh: {
+      name: "越南啤酒 — 西贡啤酒",
+      description: "Bia Saigon 是越南的旗舰国民啤酒，由 SABECO 酿造。"
+    }
+  },
+    {
+    id: "thai-red-bull",
+    category: "drinks",
+    price: 9,
+    weight: "Цена",
+    image: "images/thai-red-bull.jpg",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Тайский Red Bull",
+      description: "Thai Red Bull, известный в Таиланде как Krating Daeng («Красный гаур»), — оригинальный, негазированный энергетический напиток, ставший вдохновением для мирового бренда Red Bull. Это сладкий, очень концентрированный сироп с фруктово‑медовым вкусом, который традиционно продаётся в небольших стеклянных бутылках по 150 мл."
+    },
+    en: {
+      name: "Thai Red Bull",
+      description: "Thai Red Bull, known locally as Krating Daeng (meaning \"Red Gaur\"), is the original, non-carbonated energy drink that inspired the global Red Bull brand. It is a sweet, highly concentrated syrup with a fruity, honey-like flavor, traditionally sold in small 150ml glass bottles."
+    },
+    vn: {
+      name: "Red Bull Thái Lan",
+      description: "Thai Red Bull, hay còn gọi là Krating Daeng (nghĩa là “Bò rừng đỏ”), là loại nước tăng lực nguyên bản không ga, truyền cảm hứng cho thương hiệu Red Bull toàn cầu. Thức uống này có dạng siro đậm đặc, vị ngọt, hơi trái cây và mật ong, thường được bán trong chai thủy tinh 150ml."
+    },
+    zh: {
+      name: "泰国红牛",
+      description: "Thai Red Bull，当地称为 Krating Daeng（意为“红野牛”），是最初的无气能量饮料，也是全球 Red Bull 品牌的灵感来源。它是一种甜味、高浓度的糖浆状饮品，带有水果和蜂蜜的风味，传统上以150毫升的小玻璃瓶出售。"
+    }
   }
-
 ];
 
 
@@ -2023,7 +2147,7 @@ const MENU = [
     "eggplant-kai": ["vegan"],
     "crispy-broccoli": ["vegan"],
     "white-rice": ["vegan"],
-    "banh-bot-mi": ["vegan"],
+    // "banh-bot-mi": ["vegan"],
     "smashed-cucumbers": ["vegan"],
     "beer-set": ["sets"],
     "sharing-set": ["sets"],
