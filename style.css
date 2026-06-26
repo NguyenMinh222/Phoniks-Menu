@@ -12,6 +12,18 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+
+.top-sentinel { position: absolute; top: 0; left: 0; width: 1px; height: 1px; pointer-events: none; }
+
+.hero, .menu-grid, .dish-card {
+  transform: translateZ(0);
+}
+
+.dish-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 520px;
+}
+
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -30,7 +42,7 @@ body {
   background: var(--header-bg);
   backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--line);
-  transition: padding .18s ease, background .18s ease;
+  transition: none;
 }
 
 .hero__top {

@@ -156,18 +156,41 @@ function normalizeQuery(value) {
   return String(value || "").toLowerCase().replace(/\s+/g, " ").trim();
 }
 
+function buildSearchText(dish) {
+  const current = safeText(dish);
+  const allNames = [dish.ru?.name, dish.en?.name, dish.vn?.name, dish.zh?.name].filter(Boolean).join(" ");
+
+  // Важно: категории сюда специально НЕ добавляем.
+  // Иначе поиск по словам вроде "суп" начинает показывать блюда только из-за названия категории.
+  return normalizeQuery([
+    current.name,
+    current.description,
+    allNames,
+    String(dish.id || "").replace(/[-_]/g, " ")
+  ].join(" "));
+}
+
+function queryTokens(value) {
+  const normalized = normalizeQuery(value);
+  if (!normalized) return [];
+  return normalized.split(" ").filter(Boolean);
+}
+
+function dishMatchesSearch(dish, tokens) {
+  if (!tokens.length) return true;
+  const haystack = buildSearchText(dish);
+  return tokens.every(token => haystack.includes(token));
+}
+
 function renderMenu() {
   const rawSearch = searchValue;
   const hasOnlySpaces = rawSearch.length > 0 && rawSearch.trim().length === 0;
-  const query = normalizeQuery(rawSearch);
+  const tokens = queryTokens(rawSearch);
 
   const filtered = hasOnlySpaces ? [] : MENU.filter(dish => {
-    const t = safeText(dish);
     const categories = dishCategories(dish);
     const categoryOk = currentCategory === "all" || categories.includes(currentCategory);
-    const categoryText = categories.map(cat => CATEGORIES[cat]?.[currentLang] || CATEGORIES[cat]?.ru || cat).join(" ");
-    const haystack = normalizeQuery([t.name, t.description, dish.id, categoryText].join(" "));
-    return categoryOk && (!query || haystack.includes(query));
+    return categoryOk && dishMatchesSearch(dish, tokens);
   });
 
   grid.replaceChildren();
@@ -316,7 +339,7 @@ function closeSearchMode(blur = true) {
   isSearchMode = false;
   siteHeader.classList.remove("search-mode");
   if (blur) searchInput.blur();
-  requestAnimationFrame(updateHeaderCompact);
+  requestAnimationFrame(() => setHeaderCompact(window.scrollY > 80));
 }
 
 function makePlaceholder(title) {
@@ -337,22 +360,41 @@ function renderQr() {
   qrHolder.appendChild(img);
 }
 
-function updateHeaderCompact() {
+function setHeaderCompact(compact) {
   if (isSearchMode) return;
-  const shouldCompact = isHeaderCompact ? window.scrollY > 42 : window.scrollY > 96;
-  if (shouldCompact === isHeaderCompact) return;
-  isHeaderCompact = shouldCompact;
+  if (compact === isHeaderCompact) return;
+  isHeaderCompact = compact;
   siteHeader.classList.toggle("is-compact", isHeaderCompact);
 }
 
-window.addEventListener("scroll", () => {
-  if (ticking) return;
-  ticking = true;
-  requestAnimationFrame(() => {
-    updateHeaderCompact();
-    ticking = false;
-  });
-}, { passive: true });
+function setupHeaderObserver() {
+  const sentinel = document.getElementById("topSentinel");
+
+  // IntersectionObserver не дергает интерфейс на каждом пикселе скролла,
+  // поэтому при быстром скролле шапка больше не ломается.
+  if (sentinel && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      entries => {
+        if (isSearchMode) return;
+        const atTop = entries[0]?.isIntersecting;
+        setHeaderCompact(!atTop);
+      },
+      { root: null, threshold: 0 }
+    );
+    observer.observe(sentinel);
+    return;
+  }
+
+  // Запасной вариант для старых браузеров.
+  window.addEventListener("scroll", () => {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      setHeaderCompact(window.scrollY > 80);
+      ticking = false;
+    });
+  }, { passive: true });
+}
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => navigator.serviceWorker.register("service-worker.js").catch(() => {}));
@@ -369,4 +411,4 @@ installBtn.addEventListener("click", async () => {
 
 setLanguage("ru");
 renderQr();
-updateHeaderCompact();
+setupHeaderObserver();
