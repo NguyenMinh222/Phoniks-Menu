@@ -26,7 +26,7 @@ const MENU = [
   {
     id: "tom-yam",
     category: "soups",
-    price: 18,
+    price: 19,
     // weight: {
     //   ru: "450 гр",
     //   en: "450 gr",
@@ -57,7 +57,7 @@ const MENU = [
   {
     id: "tom-kha",
     category: "soups",
-    price: null,
+    price: 18,
     weight: "уточняется",
     image: "images/tom-kha.png",
     spicy: false,
@@ -82,7 +82,7 @@ const MENU = [
   {
     id: "laksa",
     category: "soups",
-    price: null,
+    price: 20,
     weight: "уточняется",
     image: "images/laksa.png",
     spicy: true,
@@ -857,7 +857,7 @@ const MENU = [
   {
     id: "bun-cha-nem",
     category: "hot",
-    price: null,
+    price: 29,
     weight: "уточняется",
     image: "images/bun-cha-nem.webp",
     spicy: false,
@@ -882,7 +882,7 @@ const MENU = [
   {
     id: "bun-nem",
     category: "hot",
-    price: null,
+    price: 23,
     weight: "уточняется",
     image: "images/bun-nem.webp",
     spicy: false,
@@ -904,31 +904,31 @@ const MENU = [
       description: "脆春卷配越南米粉、新鲜香草和传统越南酱汁。"
     }
   },
-  {
-    id: "thit-nuong",
-    category: "hot",
-    price: null,
-    weight: "уточняется",
-    image: "images/thit-nuong.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Тхит Нэнг",
-      description: "Мясо на раскалённых камнях, замаринованное во вьетнамских специях."
-    },
-    en: {
-      name: "Thit Nuong",
-      description: "Meat served on hot stones, marinated with Vietnamese spices."
-    },
-    vn: {
-      name: "Thịt Nướng",
-      description: "Thịt ướp gia vị Việt Nam, phục vụ trên đá nóng."
-    },
-    zh: {
-      name: "越式烤肉",
-      description: "越南香料腌制肉类，热石上桌。"
-    }
-  },
+  // {
+  //   id: "thit-nuong",
+  //   category: "hot",
+  //   price: null,
+  //   weight: "уточняется",
+  //   image: "images/thit-nuong.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Тхит Нэнг",
+  //     description: "Мясо на раскалённых камнях, замаринованное во вьетнамских специях."
+  //   },
+  //   en: {
+  //     name: "Thit Nuong",
+  //     description: "Meat served on hot stones, marinated with Vietnamese spices."
+  //   },
+  //   vn: {
+  //     name: "Thịt Nướng",
+  //     description: "Thịt ướp gia vị Việt Nam, phục vụ trên đá nóng."
+  //   },
+  //   zh: {
+  //     name: "越式烤肉",
+  //     description: "越南香料腌制肉类，热石上桌。"
+  //   }
+  // },
   {
     id: "bo-luc-lac",
     category: "hot",
@@ -1007,26 +1007,26 @@ const MENU = [
   {
     id: "hai-san-sao",
     category: "hot",
-    price: null,
+    price: 20,
     weight: "уточняется",
     image: "images/hai-san.webp",
     spicy: false,
     hit: false,
     ru: {
       name: "Хай Сан Сао",
-      description: "Жареные креветки, кальмар и мидии с овощами: лук, брокколи, цукини, грибы, сладкий перец и пекинская капуста на раскалённой сковороде."
+      description: "Крабовые палочки, кукуруза, лук, морковка, майонез."
     },
     en: {
       name: "Hai San Sao",
-      description: "Stir-fried shrimp, squid and mussels with onion, broccoli, zucchini, mushrooms, sweet pepper and Chinese cabbage on a hot pan."
+      description: "Crab sticks, corn, onion, carrot, and mayonnaise."
     },
     vn: {
       name: "Hải Sản Xào",
-      description: "Tôm, mực và vẹm xào với hành tây, bông cải xanh, bí ngòi, nấm, ớt chuông và cải thảo trên chảo nóng."
+      description: "Thanh cua, bắp, hành, cà rốt và sốt mayonnaise."
     },
     zh: {
       name: "炒海鲜",
-      description: "热锅炒虾、鱿鱼和青口贝，配洋葱、西兰花、西葫芦、蘑菇、甜椒和白菜。"
+      description: "蟹棒、玉米、洋葱、胡萝卜和蛋黄酱。"
     }
   },
 
@@ -1083,7 +1083,7 @@ const MENU = [
   {
     id: "chicken-cam",
     category: "hot",
-    price: null,
+    price: 19,
     weight: "уточняется",
     image: "images/chicken-cam.webp",
     spicy: false,
@@ -1233,7 +1233,7 @@ const MENU = [
   {
     id: "fish-mayo",
     category: "hot",
-    price: null,
+    price: 21,
     weight: "уточняется",
     image: "images/fish-mayo.webp",
     spicy: false,
@@ -1258,7 +1258,7 @@ const MENU = [
   {
     id: "fish-unagi",
     category: "hot",
-    price: null,
+    price: 23,
     weight: "уточняется",
     image: "images/fish-unagi.webp",
     spicy: false,
@@ -1333,7 +1333,7 @@ const MENU = [
   {
     id: "crispy-broccoli",
     category: "hot",
-    price: null,
+    price: 17,
     weight: "уточняется",
     image: "images/broccoli-crispy.webp",
     spicy: false,
@@ -1406,31 +1406,31 @@ const MENU = [
       description: "清爽鸡肉沙拉，配黄瓜、甜椒、胡萝卜、绿豆芽、洋葱、香菜和花生。"
     }
   },
-  {
-    id: "smashed-cucumbers",
-    category: "salads",
-    price: null,
-    weight: "уточняется",
-    image: "images/smashed-cucumbers.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Битые огурцы",
-      description: "Хрустящие битые огурцы в азиатской заправке."
-    },
-    en: {
-      name: "Smashed Cucumbers",
-      description: "Crunchy smashed cucumbers in Asian dressing."
-    },
-    vn: {
-      name: "Dưa Leo Đập",
-      description: "Dưa leo đập giòn với nước sốt châu Á."
-    },
-    zh: {
-      name: "拍黄瓜",
-      description: "爽脆拍黄瓜，配亚洲风味酱汁。"
-    }
-  },
+  // {
+  //   id: "smashed-cucumbers",
+  //   category: "salads",
+  //   price: null,
+  //   weight: "уточняется",
+  //   image: "images/smashed-cucumbers.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Битые огурцы",
+  //     description: "Хрустящие битые огурцы в азиатской заправке."
+  //   },
+  //   en: {
+  //     name: "Smashed Cucumbers",
+  //     description: "Crunchy smashed cucumbers in Asian dressing."
+  //   },
+  //   vn: {
+  //     name: "Dưa Leo Đập",
+  //     description: "Dưa leo đập giòn với nước sốt châu Á."
+  //   },
+  //   zh: {
+  //     name: "拍黄瓜",
+  //     description: "爽脆拍黄瓜，配亚洲风味酱汁。"
+  //   }
+  // },
   {
     id: "white-rice",
     category: "extra",
@@ -1484,7 +1484,7 @@ const MENU = [
   {
     id: "banh-bot-mi",
     category: "extra",
-    price: null,
+    price: 6,
     weight: "уточняется",
     image: "images/banh-bot-mi.webp",
     spicy: false,
@@ -1509,7 +1509,7 @@ const MENU = [
   {
     id: "strips-fries",
     category: "kids",
-    price: 12,
+    price: 14,
     weight: "уточняется",
     image: "images/strips-fries.webp",
     spicy: false,
@@ -1534,26 +1534,26 @@ const MENU = [
   {
     id: "thit-nuong-fries",
     category: "kids",
-    price: null,
+    price: 18,
     weight: "уточняется",
     image: "images/thit-nuong-fries.webp",
     spicy: false,
     hit: false,
     ru: {
       name: "Шашлыки фри",
-      description: ""
+      description: "Жареная свинина на раскалённых камнях с картофелем фри"
     },
     en: {
-      name: "",
-      description: ""
+      name: "Shashlik with fries",
+      description: "Fried pork served on sizzling stones with French fries."
     },
     vn: {
-      name: "",
-      description: ""
+      name: "Thịt nướng xiên ăn kèm khoai tây chiên",
+      description: "Thịt heo chiên phục vụ trên đá nóng kèm khoai tây chiên."
     },
     zh: {
-      name: "",
-      description: ""
+      name: "烤串配薯条",
+      description: "铁板热石猪肉配薯条。"
     }
   },
   // {
@@ -1584,7 +1584,7 @@ const MENU = [
   {
     id: "sleeping-bear",
     category: "kids",
-    price: null,
+    price: 16,
     weight: "уточняется",
     image: "images/sleeping-bear.webp",
     spicy: false,
@@ -1609,7 +1609,7 @@ const MENU = [
   {
     id: "octopus-pool",
     category: "kids",
-    price: null,
+    price: 15,
     weight: "уточняется",
     image: "images/octopus-in-the-pool.webp",
     spicy: false,
@@ -1784,25 +1784,25 @@ const MENU = [
   {
     id: "nem-hai-san",
     category: "snacks",
-    price: null,
+    price: 21,
     weight: "уточняется",
     image: "images/nem-hai-san.webp",
     spicy: false,
     hit: false,
     ru: {
-      name: "Нем Хай Сан",
+      name: "Нем Хай Сан (3 шт)",
       description: "Хрустящие вьетнамские роллы с начинкой из креветок, лука и майонеза."
     },
     en: {
-      name: "Seafood Nem",
+      name: "Seafood Nem (3 pcs)",
       description: "Crispy Vietnamese rolls with shrimp, onion and mayonnaise filling."
     },
     vn: {
-      name: "Nem Hải Sản",
+      name: "Nem Hải Sản (3 cái)",
       description: "Nem giòn với nhân tôm, hành tây và sốt mayonnaise."
     },
     zh: {
-      name: "海鲜春卷",
+      name: "海鲜春卷 （3个）",
       description: "酥脆越南春卷，配虾仁、洋葱和蛋黄酱。"
     }
   },
@@ -1860,25 +1860,25 @@ const MENU = [
   {
     id: "corn-dog",
     category: "snacks",
-    price: null,
+    price: 7,
     weight: "уточняется",
     image: "images/corn-dog.webp",
     spicy: false,
     hit: false,
     ru: {
-      name: "Корн-дог",
+      name: "Корн-дог (1 шт)",
       description: "Жареная сосиска в хрустящем тесте."
     },
     en: {
-      name: "Corn Dog",
+      name: "Corn Dog (1 pcs)",
       description: "Fried sausage in crispy batter."
     },
     vn: {
-      name: "Corn Dog",
+      name: "Corn Dog (1 cái)",
       description: "Xúc xích chiên giòn trong lớp bột."
     },
     zh: {
-      name: "热狗棒",
+      name: "热狗棒 (1个)",
       description: "裹面糊油炸香肠。"
     }
   },
@@ -1932,32 +1932,31 @@ const MENU = [
       description: "香脆炸马苏里拉芝士。"
     }
   },
-  {
-    id: "beer-set",
-    category: "snacks",
-    price: null,
-    weight: "уточняется",
-    image: "images/beer-set.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Сет для двоих",
-      description: "Большой набор закусок для компании."
-    },
-    en: {
-      name: "Sharing Set",
-      description: "Large snack set for sharing."
-    },
-    vn: {
-      name: "Set Cho Hai Người",
-      description: "Set món ăn nhẹ lớn dành cho hai người hoặc nhóm."
-    },
-    zh: {
-      name: "双人拼盘",
-      description: "适合两人或朋友分享的大份小吃拼盘。"
-    }
-  },
-
+  // {
+  //   id: "beer-set",
+  //   category: "snacks",
+  //   price: null,
+  //   weight: "уточняется",
+  //   image: "images/beer-set.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Сет для двоих",
+  //     description: "Большой набор закусок для компании."
+  //   },
+  //   en: {
+  //     name: "Sharing Set",
+  //     description: "Large snack set for sharing."
+  //   },
+  //   vn: {
+  //     name: "Set Cho Hai Người",
+  //     description: "Set món ăn nhẹ lớn dành cho hai người hoặc nhóm."
+  //   },
+  //   zh: {
+  //     name: "双人拼盘",
+  //     description: "适合两人或朋友分享的大份小吃拼盘。"
+  //   }
+  // },
   {
     id: "dessert-coming-soon",
     category: "desserts",
