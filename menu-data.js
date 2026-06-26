@@ -14,6 +14,8 @@ const CATEGORIES = {
   hot: { ru: "Горячее", en: "Hot dishes", vn: "Món nóng", zh: "热菜" },
   salads: { ru: "Салаты", en: "Salads", vn: "Gỏi", zh: "沙拉" },
   snacks: { ru: "Закуски", en: "Snacks", vn: "Món ăn nhẹ", zh: "小吃" },
+  vegan: { ru: "Веганское", en: "Vegan", vn: "Món chay", zh: "纯素" },
+  sets: { ru: "Сеты для двоих", en: "Sets for two", vn: "Set cho hai người", zh: "双人套餐" },
   kids: { ru: "Детское", en: "Kids", vn: "Trẻ em", zh: "儿童餐" },
   extra: { ru: "Дополнительно", en: "Extra", vn: "Món thêm", zh: "加点" },
   desserts: { ru: "Десерты", en: "Desserts", vn: "Tráng miệng", zh: "甜点" },
@@ -179,7 +181,7 @@ const MENU = [
   },
   {
     id: "pho-dau",
-    category: "soups",
+    category: ["soups", "vegan"],
     price: 18,
     weight: "уточняется",
     image: "images/pho-tofu.webp",
@@ -412,19 +414,19 @@ const MENU = [
     hit: false,
     ru: {
       name: "Миен с курицей",
-      description: "Стеклянная лапша с курицей, луком, грибами, стручковой фасолью, бобами эдамаме и морковью."
+      description: "Стеклянная лапша с курицей, зелёным луком, грибами, сладким перцем и брокколи."
     },
     en: {
       name: "Mien with Chicken",
-      description: "Glass noodles with chicken, onion, mushrooms, green beans, edamame and carrot."
+      description: "Glass noodles with chicken, green onions, mushrooms, sweet peppers, and broccoli."
     },
     vn: {
       name: "Miến Xào Gà",
-      description: "Miến với gà, hành tây, nấm, đậu cô ve, edamame và cà rốt."
+      description: "Miến trộn với thịt gà, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
       name: "鸡肉粉丝",
-      description: "粉丝配鸡肉、洋葱、蘑菇、四季豆、毛豆和胡萝卜。"
+      description: "粉丝配鸡肉、葱、蘑菇、甜椒和西兰花。"
     }
   },
   {
@@ -437,19 +439,19 @@ const MENU = [
     hit: false,
     ru: {
       name: "Миен с говядиной",
-      description: "Стеклянная лапша с говядиной, луком, грибами, стручковой фасолью, бобами эдамаме и морковью."
+      description: "Стеклянная лапша с говядиной, зелёным луком, грибами, сладким перцем и брокколи."
     },
     en: {
       name: "Mien with Beef",
-      description: "Glass noodles with beef, onion, mushrooms, green beans, edamame and carrot."
+      description: "Glass noodles with beef, green onions, mushrooms, sweet peppers, and broccoli."
     },
     vn: {
       name: "Miến Xào Bò",
-      description: "Miến với bò, hành tây, nấm, đậu cô ve, edamame và cà rốt."
+      description: "Miến trộn với thịt bò, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
       name: "牛肉粉丝",
-      description: "粉丝配牛肉、洋葱、蘑菇、四季豆、毛豆和胡萝卜。"
+      description: "粉丝配牛肉、葱、蘑菇、甜椒和西兰花。"
     }
   },
   {
@@ -462,19 +464,19 @@ const MENU = [
     hit: false,
     ru: {
       name: "Миен с креветками",
-      description: "Стеклянная лапша с креветками, луком, грибами, стручковой фасолью, бобами эдамаме и морковью."
+      description: "Стеклянная лапша с креветками, зелёным луком, грибами, сладким перцем и брокколи."
     },
     en: {
       name: "Mien with Shrimp",
-      description: "Glass noodles with shrimp, onion, mushrooms, green beans, edamame and carrot."
+      description: "Glass noodles with shrimp, green onions, mushrooms, sweet peppers, and broccoli."
     },
     vn: {
       name: "Miến Xào Tôm",
-      description: "Miến với tôm, hành tây, nấm, đậu cô ve, edamame và cà rốt."
+      description: "Miến trộn với tôm, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
       name: "鲜虾粉丝",
-      description: "粉丝配鲜虾、洋葱、蘑菇、四季豆、毛豆和胡萝卜。"
+      description: "粉丝配虾、葱、蘑菇、甜椒和西兰花。"
     }
   },
     {
@@ -1280,7 +1282,7 @@ const MENU = [
   },
   {
     id: "tofu-sweet-chili",
-    category: "hot",
+    category: ["hot", "vegan"],
     price: 16,
     weight: "уточняется",
     image: "images/tofu-sweet-chili.webp",
@@ -1305,7 +1307,7 @@ const MENU = [
   },
   {
     id: "eggplant-kai",
-    category: "hot",
+    category: ["hot", "vegan"],
     price: 15,
     weight: "уточняется",
     image: "images/ca-tim-cay.webp",
@@ -1330,7 +1332,7 @@ const MENU = [
   },
   {
     id: "crispy-broccoli",
-    category: "hot",
+    category: ["hot", "vegan"],
     price: null,
     weight: "уточняется",
     image: "images/broccoli-crispy.webp",
@@ -1431,7 +1433,7 @@ const MENU = [
   },
   {
     id: "white-rice",
-    category: "extra",
+    category: ["extra", "vegan"],
     price: 2.5,
     weight: "уточняется",
     image: "images/white-rice.webp",
@@ -1932,7 +1934,7 @@ const MENU = [
   },
   {
     id: "beer-set",
-    category: "snacks",
+    category: ["snacks", "sets"],
     price: null,
     weight: "уточняется",
     image: "images/beer-set.webp",

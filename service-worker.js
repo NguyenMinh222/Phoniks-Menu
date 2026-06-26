@@ -1,9 +1,10 @@
-const CACHE_NAME = "phoniks-menu-v3"; // Шаг 1: Меняем версию, чтобы сбросить старый кэш у пользователей
+const CACHE_NAME = "phoniks-menu-v4";
 const FILES = [
   "./",
   "./index.html",
   "./style.css",
   "./script.js",
+  "./menu-data.js",
   "./manifest.json"
 ];
 
@@ -14,29 +15,25 @@ self.addEventListener("install", event => {
 
 self.addEventListener("activate", event => {
   event.waitUntil(
-    caches.keys().then(keys => 
+    caches.keys().then(keys =>
       Promise.all(keys.map(key => key !== CACHE_NAME && caches.delete(key)))
     )
   );
   self.clients.claim();
 });
 
-// Шаг 2: Меняем логику обработки запросов
 self.addEventListener("fetch", event => {
-  // Стратегия Network-First: сначала пытаемся взять свежий файл из сети
+  if (event.request.method !== "GET") return;
+
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: "no-store" })
       .then(response => {
-        // Если сеть доступна, сохраняем свежую копию в кэш и отдаем пользователю
-        if (response.status === 200) {
-          const responseClone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(event.request, responseClone));
+        if (response && response.status === 200) {
+          const copy = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
         }
         return response;
       })
-      .catch(() => {
-        // Если интернета нет (оффлайн), достаем файл из кэша
-        return caches.match(event.request);
-      })
+      .catch(() => caches.match(event.request))
   );
 });

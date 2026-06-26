@@ -168,3 +168,140 @@ main { padding: 16px; }
 .lunch-banner-collapsed .lunch-mini {
   opacity: 1;
 }
+
+/* ===== PHONIKS UX UPDATE ===== */
+
+.hero {
+  transition: padding .24s ease, background .24s ease;
+}
+
+.hero__top {
+  transition:
+    max-height .24s ease,
+    opacity .18s ease,
+    transform .24s ease,
+    margin .24s ease;
+  max-height: 92px;
+}
+
+.category-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+}
+
+.category-row .chips {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0;
+}
+
+.search-toggle {
+  flex: 0 0 auto;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  color: var(--text);
+  font-size: 17px;
+  font-weight: 900;
+  display: grid;
+  place-items: center;
+}
+
+.search-wrap {
+  transition:
+    max-height .24s ease,
+    opacity .18s ease,
+    transform .24s ease,
+    margin .24s ease;
+  max-height: 74px;
+  overflow: hidden;
+}
+
+.header-compact .hero {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.header-compact .hero__top {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  margin: 0;
+  overflow: hidden;
+}
+
+.header-compact .search-wrap {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-8px);
+  margin-top: 0;
+  pointer-events: none;
+}
+
+.header-compact .language-switcher {
+  padding-top: 0;
+}
+
+.search-mode .hero {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search-mode .hero__top,
+.search-mode .language-switcher,
+.search-mode .category-row {
+  display: none;
+}
+
+.search-mode .search-wrap {
+  display: block;
+  max-height: 76px;
+  opacity: 1;
+  transform: none;
+  margin-top: 0;
+  pointer-events: auto;
+}
+
+.photo-note {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.58);
+  color: #f7f0e8;
+  font-size: 12px;
+  font-weight: 800;
+  backdrop-filter: blur(10px);
+}
+
+.photo-note[hidden] {
+  display: none;
+}
+
+.dish-image-btn {
+  position: relative;
+}
+
+.chip {
+  max-width: 168px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .hero__top,
+  .search-wrap {
+    transition: none;
+  }
+}

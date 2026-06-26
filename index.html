@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="siteHeader">
     <div class="hero__top">
       <div>
         <p class="eyebrow">Born from fire</p>
@@ -44,11 +44,14 @@
     </section> -->
 
 
-    <div class="search-wrap">
+    <div class="search-wrap" id="searchWrap">
       <input id="searchInput" type="search" placeholder="Поиск по меню" autocomplete="off" />
     </div>
 
-    <nav class="chips" id="categoryChips" aria-label="Menu categories"></nav>
+    <div class="category-row" id="categoryRow">
+      <button class="search-toggle" id="searchToggle" type="button" aria-label="Открыть поиск">🔎</button>
+      <nav class="chips" id="categoryChips" aria-label="Menu categories"></nav>
+    </div>
   </header>
 
   <main>
@@ -75,6 +78,7 @@
     <article class="dish-card">
       <button class="dish-image-btn" type="button">
         <img class="dish-image" alt="" loading="lazy" decoding="async" />
+        <span class="photo-note" hidden></span>
       </button>
       <div class="dish-body">
         <div class="dish-head">
