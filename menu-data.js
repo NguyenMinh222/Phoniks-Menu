@@ -232,7 +232,7 @@ const MENU = [
   {
     id: "mi-tom-soup",
     category: "soups",
-    price: 12,
+    price: 13,
     weight: "Цена",
     image: "images/mi-tom-ga.webp",
     spicy: false,
@@ -1032,7 +1032,7 @@ const MENU = [
   {
     id: "hai-san-sao",
     category: "hot",
-    price: 20,
+    price: 29,
     weight: "Цена",
     image: "images/hai-san.webp",
     spicy: false,
@@ -1064,19 +1064,19 @@ const MENU = [
     hit: true,
     ru: {
       name: "Курица Свит Чили",
-      description: "Хрустящая курица, обжаренная с ростками маша в соусе свит чили и посыпанная арахисом. Подаётся с белым рисом."
+      description: "Хрустящая курица, обжаренная с луком и ростками маша в соусе свит чили и посыпанная арахисом. Подаётся с белым рисом."
     },
     en: {
       name: "Sweet Chili Chicken",
-      description: "Crispy chicken stir-fried with mung bean sprouts in sweet chili sauce and topped with peanuts. Served with white rice."
+      description: "Crispy chicken stir‑fried with onions and mung bean sprouts in sweet chili sauce, topped with peanuts. Served with white rice."
     },
     vn: {
       name: "Gà Sweet Chili",
-      description: "Gà giòn xào với giá đỗ trong sốt sweet chili, rắc đậu phộng. Ăn kèm cơm trắng."
+      description: "Gà giòn xào với hành tây và giá đỗ trong sốt sweet chili, rắc đậu phộng. Dùng kèm cơm trắng."
     },
     zh: {
       name: "甜辣鸡",
-      description: "脆鸡肉配绿豆芽和甜辣酱，撒花生。搭配白米饭。"
+      description: "香脆鸡肉与洋葱、绿豆芽一起炒制，拌以甜辣酱并撒上花生。配白米饭。"
     }
   },
   {
@@ -1339,19 +1339,19 @@ const MENU = [
     hit: false,
     ru: {
       name: "Баклажан Кай",
-      description: "Пикантный баклажан в остром азиатском соусе с луком и брокколи. Подаётся с белым рисом."
+      description: "Пикантный баклажан в остром азиатском соусе с луком, брокколи, морковью и болгарским перцем. Подаётся с белым рисом."
     },
     en: {
       name: "Kai Eggplant",
-      description: "Spicy eggplant in hot Asian sauce with onion and broccoli. Served with white rice."
+      description: "Spicy eggplant in a hot Asian sauce with onions, broccoli, carrots, and bell peppers. Served with white rice."
     },
     vn: {
       name: "Cà Tím Cay",
-      description: "Cà tím cay trong sốt châu Á với hành tây và bông cải xanh. Ăn kèm cơm trắng."
+      description: "Cà tím sốt cay kiểu Á, xào cùng hành tây, bông cải xanh, cà rốt và ớt chuông. Dùng kèm cơm trắng."
     },
     zh: {
       name: "辣味茄子",
-      description: "香辣亚洲酱茄子，配洋葱和西兰花。搭配白米饭。"
+      description: "香辣亚洲风味茄子，配洋葱、西兰花、胡萝卜和甜椒。配白米饭。"
     }
   },
   {
@@ -2106,7 +2106,7 @@ const MENU = [
       description: "Bia Saigon 是越南的旗舰国民啤酒，由 SABECO 酿造。"
     }
   },
-    {
+  {
     id: "thai-red-bull",
     category: "drinks",
     price: 9,
@@ -2129,6 +2129,31 @@ const MENU = [
     zh: {
       name: "泰国红牛",
       description: "Thai Red Bull，当地称为 Krating Daeng（意为“红野牛”），是最初的无气能量饮料，也是全球 Red Bull 品牌的灵感来源。"
+    }
+  },
+    {
+    id: "coca_coca_zero_sprite_fanta",
+    category: "drinks",
+    price: 4,
+    weight: "Цена",
+    image: "images/coca_coca_zero_sprite_fanta.jpg",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Кока-Кола Оригинал, Кока-Кола Зеро, Спрайт, Фанта. (1 банка)",
+      description: ""
+    },
+    en: {
+      name: "Coca‑Cola Original, Coca‑Cola Zero, Sprite, Fanta. (1 can)",
+      description: ""
+    },
+    vn: {
+      name: "Coca‑Cola Original, Coca‑Cola Zero, Sprite, Fanta. (1 lon)",
+      description: ""
+    },
+    zh: {
+      name: "可口可乐原味、零度可口可乐、雪碧、芬达.（1 罐）",
+      description: ""
     }
   }
 ];
