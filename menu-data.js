@@ -23,6 +23,56 @@ const CATEGORIES = {
 };
 
 const MENU = [
+    {
+    id: "pho-bo-chao",
+    category: "soups",
+    price: 22,
+    weight: "Цена",
+    image: "images/pho-bo.webp",
+    spicy: false,
+    hit: true,
+    ru: {
+      name: "Фо Бо с обжаренной говядиной",
+      description: "Легендарный вьетнамский суп обжаренной на сковороде говядиной, рисовой лапшой, наваристым бульоном и большим количеством зелени. Подаётся с чесночным уксусом, острым перцем и лимоном."
+    },
+    en: {
+      name: "Pan‑seared Beef Pho",
+      description: "A legendary Vietnamese soup with pan‑seared beef, rice noodles, rich aromatic broth, and plenty of fresh herbs. Served with garlic vinegar, spicy chili, and a wedge of lemon."
+    },
+    vn: {
+      name: "Phở Bò Áp Chảo",
+      description: "Món phở Việt Nam trứ danh với thịt bò áp chảo, bánh phở mềm, nước dùng đậm đà và nhiều rau thơm. Ăn kèm giấm tỏi, ớt cay và một miếng chanh."
+    },
+    zh: {
+      name: "铁板煎牛肉河粉",
+      description: "传奇越南汤品，配煎香牛肉、河粉、浓郁高汤和大量新鲜香草。佐以蒜醋、辣椒和柠檬片。"
+    }
+  },
+  {
+    id: "pho-ga",
+    category: "soups",
+    price: 19,
+    weight: "Цена",
+    image: "images/pho-ga.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Фо Га",
+      description: "Традиционный вьетнамский суп с курицей, рисовой лапшой, ароматной зеленью и наваристым бульоном. Подаётся с чесночным уксусом, острым перцем и лимоном."
+    },
+    en: {
+      name: "Pho Ga",
+      description: "Traditional Vietnamese chicken noodle soup with herbs and rich broth. Served with garlic vinegar, chili and lemon."
+    },
+    vn: {
+      name: "Phở Gà",
+      description: "Phở gà truyền thống với bánh phở, rau thơm và nước dùng đậm đà. Ăn kèm giấm tỏi, ớt và chanh."
+    },
+    zh: {
+      name: "鸡肉粉",
+      description: "传统越南鸡肉河粉，配香草和浓郁汤底。搭配蒜醋、辣椒和柠檬。"
+    }
+  },
   {
     id: "tom-yam",
     category: "soups",
@@ -105,38 +155,13 @@ const MENU = [
     }
   },
   {
-    id: "pho-bo-chao",
-    category: "soups",
-    price: 22,
-    weight: "Цена",
-    image: "images/pho-bo.webp",
-    spicy: false,
-    hit: true,
-    ru: {
-      name: "Фо Бо с обжаренной говядиной",
-      description: "Легендарный вьетнамский суп обжаренной на сковороде говядиной, рисовой лапшой, наваристым бульоном и большим количеством зелени. Подаётся с чесночным уксусом, острым перцем и лимоном."
-    },
-    en: {
-      name: "Pan‑seared Beef Pho",
-      description: "A legendary Vietnamese soup with pan‑seared beef, rice noodles, rich aromatic broth, and plenty of fresh herbs. Served with garlic vinegar, spicy chili, and a wedge of lemon."
-    },
-    vn: {
-      name: "Phở Bò Áp Chảo",
-      description: "Món phở Việt Nam trứ danh với thịt bò áp chảo, bánh phở mềm, nước dùng đậm đà và nhiều rau thơm. Ăn kèm giấm tỏi, ớt cay và một miếng chanh."
-    },
-    zh: {
-      name: "铁板煎牛肉河粉",
-      description: "传奇越南汤品，配煎香牛肉、河粉、浓郁高汤和大量新鲜香草。佐以蒜醋、辣椒和柠檬片。"
-    }
-  },
-    {
     id: "pho-bo-chin",
     category: "soups",
-    price: 22,
+    price: 23,
     weight: "Цена",
-    image: "images/pho-bo.webp",
+    image: "images/pho-chin.png",
     spicy: false,
-    hit: true,
+    hit: false,
     ru: {
       name: "Фо Бо Чин",
       description: "Традиционный суп с рисовой лапшой, ароматным говяжьим бульоном со специями и нежной, полностью проваренной говяжьей грудинкой."
@@ -152,31 +177,6 @@ const MENU = [
     zh: {
       name: "熟牛肉河粉",
       description: "传统越南河粉，配以浓郁芳香的牛骨药膳汤底和熟透、鲜嫩的牛腩肉。"
-    }
-  },
-  {
-    id: "pho-ga",
-    category: "soups",
-    price: 19,
-    weight: "Цена",
-    image: "images/pho-ga.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Фо Га",
-      description: "Традиционный вьетнамский суп с курицей, рисовой лапшой, ароматной зеленью и наваристым бульоном. Подаётся с чесночным уксусом, острым перцем и лимоном."
-    },
-    en: {
-      name: "Pho Ga",
-      description: "Traditional Vietnamese chicken noodle soup with herbs and rich broth. Served with garlic vinegar, chili and lemon."
-    },
-    vn: {
-      name: "Phở Gà",
-      description: "Phở gà truyền thống với bánh phở, rau thơm và nước dùng đậm đà. Ăn kèm giấm tỏi, ớt và chanh."
-    },
-    zh: {
-      name: "鸡肉粉",
-      description: "传统越南鸡肉河粉，配香草和浓郁汤底。搭配蒜醋、辣椒和柠檬。"
     }
   },
   {
@@ -213,11 +213,11 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Фо Дау",
+      name: "Фо Тофу",
       description: "Рисовая лапша в насыщенном бульоне с сыром тофу и свежей зеленью."
     },
     en: {
-      name: "Pho Dau",
+      name: "Pho Tofu",
       description: "Rice noodles in rich broth with tofu and fresh herbs."
     },
     vn: {
@@ -288,19 +288,19 @@ const MENU = [
     spicy: false,
     hit: true,
     ru: {
-      name: "Ми Том с говядиной",
+      name: "Ми Том с говядиной (схоже с Ми Том с курицей)",
       description: "Жареная вьетнамская лапша с говядиной, луком, грибами, брокколи и пекинской капустой в воке."
     },
     en: {
-      name: "Mi Tom with Beef",
+      name: "Mi Tom with Beef (Similar to Mi Tom with chicken)",
       description: "Fried Vietnamese noodles with beef, onion, mushrooms, broccoli and Chinese cabbage in a wok."
     },
     vn: {
-      name: "Mì Tôm Xào Bò",
+      name: "Mì Tôm Xào Bò (Tương tự như Mì Tôm gà)",
       description: "Mì Việt Nam xào với bò, hành tây, nấm, bông cải xanh và cải thảo."
     },
     zh: {
-      name: "牛肉炒越南面",
+      name: "牛肉炒越南面 (类似于鸡肉方便面（Mì Tôm))",
       description: "越南炒面，配牛肉、洋葱、蘑菇、西兰花和白菜。"
     }
   },
@@ -313,45 +313,20 @@ const MENU = [
     spicy: false,
     hit: true,
     ru: {
-      name: "Ми Том с креветками",
+      name: "Ми Том с креветками (схоже с Ми Том с курицей)",
       description: "Жареная вьетнамская лапша с креветками, луком, грибами, брокколи и пекинской капустой в воке."
     },
     en: {
-      name: "Mi Tom with Shrimp",
+      name: "Mi Tom with Shrimp Similar to Mi Tom with chicken",
       description: "Fried Vietnamese noodles with shrimp, onion, mushrooms, broccoli and Chinese cabbage in a wok."
     },
     vn: {
-      name: "Mì Tôm Xào Tôm",
+      name: "Mì Tôm Xào Tôm (Tương tự như Mì Tôm gà)",
       description: "Mì Việt Nam xào với tôm, hành tây, nấm, bông cải xanh và cải thảo."
     },
     zh: {
-      name: "鲜虾炒越南面",
+      name: "鲜虾炒越南面 (类似于鸡肉方便面（Mì Tôm))",
       description: "越南炒面，配鲜虾、洋葱、蘑菇、西兰花和白菜。"
-    }
-  },
-  {
-    id: "pho-sao-chicken",
-    category: "noodles",
-    price: 21,
-    weight: "Цена",
-    image: "images/pho-sao-chicken.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Фо Сао с курицей",
-      description: "Жареная рисовая лапша с курицей, луком, стручковой фасолью, цукини, бобами эдамаме, перцем и морковью."
-    },
-    en: {
-      name: "Pho Sao with Chicken",
-      description: "Fried rice noodles with chicken, onion, green beans, zucchini, edamame, pepper and carrot."
-    },
-    vn: {
-      name: "Phở Xào Gà",
-      description: "Phở xào với gà, hành tây, đậu cô ve, bí ngòi, edamame, ớt chuông và cà rốt."
-    },
-    zh: {
-      name: "鸡肉炒河粉",
-      description: "炒河粉，配鸡肉、洋葱、四季豆、西葫芦、毛豆、甜椒和胡萝卜。"
     }
   },
   {
@@ -380,6 +355,31 @@ const MENU = [
     }
   },
   {
+    id: "pho-sao-chicken",
+    category: "noodles",
+    price: 21,
+    weight: "Цена",
+    image: "images/pho-sao-chicken.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Фо Сао с курицей (схоже с Фо Сао с говядиной)",
+      description: "Жареная рисовая лапша с курицей, луком, стручковой фасолью, цукини, бобами эдамаме, перцем и морковью."
+    },
+    en: {
+      name: "Pho Sao with Chicken (Similar to Pho Xao with beef)",
+      description: "Fried rice noodles with chicken, onion, green beans, zucchini, edamame, pepper and carrot."
+    },
+    vn: {
+      name: "Phở Xào Gà (Tương tự như Phở Xào bò)",
+      description: "Phở xào với gà, hành tây, đậu cô ve, bí ngòi, edamame, ớt chuông và cà rốt."
+    },
+    zh: {
+      name: "鸡肉炒河粉 (类似于炒牛肉河粉（Phở Xào))",
+      description: "炒河粉，配鸡肉、洋葱、四季豆、西葫芦、毛豆、甜椒和胡萝卜。"
+    }
+  },
+  {
     id: "pho-sao-shrimp",
     category: "noodles",
     price: 24,
@@ -388,19 +388,19 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Фо Сао с креветками",
+      name: "Фо Сао с креветками (схоже с Фо Сао с говядиной)",
       description: "Жареная рисовая лапша с креветками, луком, стручковой фасолью, цукини, бобами эдамаме, перцем и морковью."
     },
     en: {
-      name: "Pho Sao with Shrimp",
+      name: "Pho Sao with Shrimp (Similar to Pho Xao with beef)",
       description: "Fried rice noodles with shrimp, onion, green beans, zucchini, edamame, pepper and carrot."
     },
     vn: {
-      name: "Phở Xào Tôm",
+      name: "Phở Xào Tôm (Tương tự như Phở Xào bò)",
       description: "Phở xào với tôm, hành tây, đậu cô ve, bí ngòi, edamame, ớt chuông và cà rốt."
     },
     zh: {
-      name: "鲜虾炒河粉",
+      name: "鲜虾炒河粉 (类似于炒牛肉河粉（Phở Xào))",
       description: "炒河粉，配鲜虾、洋葱、四季豆、西葫芦、毛豆、甜椒和胡萝卜。"
     }
   },
@@ -430,56 +430,6 @@ const MENU = [
     }
   },
   {
-    id: "mien-chicken",
-    category: "noodles",
-    price: 21,
-    weight: "Цена",
-    image: "images/mien-chicken.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Миен с курицей",
-      description: "Стеклянная лапша с курицей, зелёным луком, грибами, сладким перцем и брокколи."
-    },
-    en: {
-      name: "Mien with Chicken",
-      description: "Glass noodles with chicken, green onions, mushrooms, sweet peppers, and broccoli."
-    },
-    vn: {
-      name: "Miến Xào Gà",
-      description: "Miến trộn với thịt gà, hành lá, nấm, ớt chuông và bông cải xanh."
-    },
-    zh: {
-      name: "鸡肉粉丝",
-      description: "粉丝配鸡肉、葱、蘑菇、甜椒和西兰花。"
-    }
-  },
-  {
-    id: "mien-beef",
-    category: "noodles",
-    price: 23,
-    weight: "Цена",
-    image: "images/mien-beef.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Миен с говядиной",
-      description: "Стеклянная лапша с говядиной, зелёным луком, грибами, сладким перцем и брокколи."
-    },
-    en: {
-      name: "Mien with Beef",
-      description: "Glass noodles with beef, green onions, mushrooms, sweet peppers, and broccoli."
-    },
-    vn: {
-      name: "Miến Xào Bò",
-      description: "Miến trộn với thịt bò, hành lá, nấm, ớt chuông và bông cải xanh."
-    },
-    zh: {
-      name: "牛肉粉丝",
-      description: "粉丝配牛肉、葱、蘑菇、甜椒和西兰花。"
-    }
-  },
-  {
     id: "mien-shrimp",
     category: "noodles",
     price: 24,
@@ -504,7 +454,57 @@ const MENU = [
       description: "粉丝配虾、葱、蘑菇、甜椒和西兰花。"
     }
   },
-    {
+  {
+    id: "mien-chicken",
+    category: "noodles",
+    price: 21,
+    weight: "Цена",
+    image: "images/mien-chicken.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Миен с курицей (схоже с миен с креветками)",
+      description: "Стеклянная лапша с курицей, зелёным луком, грибами, сладким перцем и брокколи."
+    },
+    en: {
+      name: "Mien with Chicken (Similar to mien with shrimp)",
+      description: "Glass noodles with chicken, green onions, mushrooms, sweet peppers, and broccoli."
+    },
+    vn: {
+      name: "Miến Xào Gà (Tương tự như miến tôm.)",
+      description: "Miến trộn với thịt gà, hành lá, nấm, ớt chuông và bông cải xanh."
+    },
+    zh: {
+      name: "鸡肉粉丝 (类似于虾粉丝)",
+      description: "粉丝配鸡肉、葱、蘑菇、甜椒和西兰花。"
+    }
+  },
+  {
+    id: "mien-beef",
+    category: "noodles",
+    price: 23,
+    weight: "Цена",
+    image: "images/mien-beef.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Миен с говядиной (схоже с миен с креветками)",
+      description: "Стеклянная лапша с говядиной, зелёным луком, грибами, сладким перцем и брокколи."
+    },
+    en: {
+      name: "Mien with Beef (Similar to mien with shrimp)",
+      description: "Glass noodles with beef, green onions, mushrooms, sweet peppers, and broccoli."
+    },
+    vn: {
+      name: "Miến Xào Bò (Tương tự như miến tôm.)",
+      description: "Miến trộn với thịt bò, hành lá, nấm, ớt chuông và bông cải xanh."
+    },
+    zh: {
+      name: "牛肉粉丝 (类似于虾粉丝)",
+      description: "粉丝配牛肉、葱、蘑菇、甜椒和西兰花。"
+    }
+  },
+  {
     id: "wok-chicken",
     category: "noodles",
     price: 21,
@@ -538,19 +538,19 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Вок с говядиной",
+      name: "Вок с говядиной (схоже с вок с курицей)",
       description: "Яичная лапша, обжаренная в воке с говядиной, луком, бобами эдамаме, стручковой фасолью, сладким перцем и морковью."
     },
     en: {
-      name: "Wok with Beef",
+      name: "Wok with Beef (Similar to chicken wok)",
       description: "Egg noodles stir-fried in a wok with beef, onion, edamame, green beans, sweet pepper and carrot."
     },
     vn: {
-      name: "Mì Trứng Xào Bò",
+      name: "Mì Trứng Xào Bò (Tương tự như wok gà)",
       description: "Mì trứng xào với bò, hành tây, edamame, đậu cô ve, ớt chuông và cà rốt."
     },
     zh: {
-      name: "牛肉炒蛋面",
+      name: "牛肉炒蛋面 (类似于鸡肉炒面)",
       description: "蛋面配牛肉、洋葱、毛豆、四季豆、甜椒和胡萝卜。"
     }
   },
@@ -634,7 +634,7 @@ const MENU = [
     category: "bowls",
     price: 19,
     weight: "Цена",
-    image: "images/mi-chon-chicken.webp",
+    image: "images/com-tron.webp",
     spicy: false,
     hit: false,
     ru: {
@@ -663,19 +663,19 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Ми Чон с говядиной",
+      name: "Ми Чон с говядиной (схоже с Ми Чон с курицей)",
       description: "В основе вьетнамская лапша. Сверху обжаренная говядина в устрично-унаги соусе, свежий огурец, сладкий перец, чука, грибы, жареное яйцо и арахис."
     },
     en: {
-      name: "Mi Chon with Beef",
+      name: "Mi Chon with Beef (Similar to Mi Chon with chicken.)",
       description: "Vietnamese noodles topped with fried beef in oyster-unagi sauce, cucumber, sweet pepper, chuka, mushrooms, fried egg and peanuts."
     },
     vn: {
-      name: "Mì Trộn Bò",
+      name: "Mì Trộn Bò (Tương tự như Mì Trộn gà)",
       description: "Mì Việt Nam với bò xào sốt hàu-unagi, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên và đậu phộng."
     },
     zh: {
-      name: "牛肉拌面",
+      name: "牛肉拌面 (类似于鸡肉拌面)",
       description: "越南面配蚝油鳗鱼汁牛肉、黄瓜、甜椒、海藻、蘑菇、煎蛋和花生。"
     }
   },
@@ -688,19 +688,19 @@ const MENU = [
     spicy: false,
     hit: true,
     ru: {
-      name: "Ми Чон с креветками",
+      name: "Ми Чон с креветками (схоже с Ми Чон с курицей)",
       description: "В основе вьетнамская лапша. Сверху обжаренные креветки в соусе майо-чили, свежий огурец, сладкий перец, чука, грибы, жареное яйцо, арахис и соус унаги."
     },
     en: {
-      name: "Mi Chon with Shrimp",
+      name: "Mi Chon with Shrimp (Similar to Mi Chon with chicken.)",
       description: "Vietnamese noodles topped with fried shrimp in mayo-chili sauce, cucumber, sweet pepper, chuka, mushrooms, fried egg, peanuts and unagi sauce."
     },
     vn: {
-      name: "Mì Trộn Tôm",
+      name: "Mì Trộn Tôm (Tương tự như Mì Trộn gà)",
       description: "Mì Việt Nam với tôm xào sốt mayo ớt, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên, đậu phộng và sốt unagi."
     },
     zh: {
-      name: "鲜虾拌面",
+      name: "鲜虾拌面 (类似于鸡肉拌面)",
       description: "越南面配蛋黄辣酱鲜虾、黄瓜、甜椒、海藻、蘑菇、煎蛋、花生和鳗鱼汁。"
     }
   },
@@ -738,19 +738,19 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Кэм Чон с говядиной",
+      name: "Кэм Чон с говядиной (схоже с Кэм Чон с креветками)",
       description: "В основе рис. Сверху обжаренная говядина в устрично-унаги соусе, свежий огурец, сладкий перец, чука, грибы, жареное яйцо и арахис."
     },
     en: {
-      name: "Com Chon with Beef",
+      name: "Com Chon with Beef (Similar to Com Tron with shrimp)",
       description: "Rice bowl topped with fried beef in oyster-unagi sauce, cucumber, sweet pepper, chuka, mushrooms, fried egg and peanuts."
     },
     vn: {
-      name: "Cơm Trộn Bò",
+      name: "Cơm Trộn Bò (Tương tự như Cơm Trộn tôm)",
       description: "Cơm với bò xào sốt hàu-unagi, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên và đậu phộng."
     },
     zh: {
-      name: "牛肉拌饭",
+      name: "牛肉拌饭 (类似于虾拌饭)",
       description: "米饭配蚝油鳗鱼汁牛肉、黄瓜、甜椒、海藻、蘑菇、煎蛋和花生。"
     }
   },
@@ -763,19 +763,19 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Кэм Чон с курицей",
+      name: "Кэм Чон с курицей (схоже с Кэм Чон с креветками)",
       description: "В основе рис. Сверху обжаренная курица в соусе майо-чили, свежий огурец, сладкий перец, чука, грибы, жареное яйцо, арахис и соус унаги."
     },
     en: {
-      name: "Com Chon with Chicken",
+      name: "Com Chon with Chicken (Similar to Com Tron with shrimp)",
       description: "Rice bowl topped with fried chicken in mayo-chili sauce, cucumber, sweet pepper, chuka, mushrooms, fried egg, peanuts and unagi sauce."
     },
     vn: {
-      name: "Cơm Trộn Gà",
+      name: "Cơm Trộn Gà (Tương tự như Cơm Trộn tôm)",
       description: "Cơm với gà xào sốt mayo ớt, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên, đậu phộng và sốt unagi."
     },
     zh: {
-      name: "鸡肉拌饭",
+      name: "鸡肉拌饭 (类似于虾拌饭)",
       description: "米饭配蛋黄辣酱鸡肉、黄瓜、甜椒、海藻、蘑菇、煎蛋、花生和鳗鱼汁。"
     }
   },
@@ -813,15 +813,15 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Кэм Занг с говядиной",
+      name: "Кэм Занг с говядиной (схоже с Кэм Занг с курицей)",
       description: "Жареный рис с говядиной, луком, морковью, бобами эдамаме, стручковой фасолью и брокколи."
     },
     en: {
-      name: "Com Rang with Beef",
+      name: "Com Rang with Beef (Similar to Com Rang with chicken)",
       description: "Fried rice with beef, onion, carrot, edamame, green beans and broccoli."
     },
     vn: {
-      name: "Cơm Rang Bò",
+      name: "Cơm Rang Bò (Tương tự như Cơm Rang gà)",
       description: "Cơm rang với bò, hành tây, cà rốt, edamame, đậu cô ve và bông cải xanh."
     },
     zh: {
@@ -838,15 +838,15 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Кэм Занг с креветками",
+      name: "Кэм Занг с креветками (схоже с Кэм Занг с курицей)",
       description: "Жареный рис с креветками, луком, морковью, бобами эдамаме, стручковой фасолью и брокколи."
     },
     en: {
-      name: "Com Rang with Shrimp",
+      name: "Com Rang with Shrimp (Similar to Com Rang with chicken)",
       description: "Fried rice with shrimp, onion, carrot, edamame, green beans and broccoli."
     },
     vn: {
-      name: "Cơm Rang Tôm",
+      name: "Cơm Rang Tôm (Tương tự như Cơm Rang gà)",
       description: "Cơm rang với tôm, hành tây, cà rốt, edamame, đậu cô ve và bông cải xanh."
     },
     zh: {
@@ -1039,22 +1039,21 @@ const MENU = [
     hit: false,
     ru: {
       name: "Хай Сан Сао",
-      description: "Крабовые палочки, кукуруза, лук, морковка, майонез."
+      description: "Жаренные креветки, кальмар и мидии с овощами: лук, брокколи, цукини, грибы, сладкий перец и пекинская капуста на раскалённой сковороде."
     },
     en: {
       name: "Hai San Sao",
-      description: "Crab sticks, corn, onion, carrot, and mayonnaise."
+      description: "Fried shrimp, squid, and mussels with vegetables — onions, broccoli, zucchini, mushrooms, sweet peppers, and napa cabbage — cooked on a sizzling hot pan."
     },
     vn: {
       name: "Hải Sản Xào",
-      description: "Thanh cua, bắp, hành, cà rốt và sốt mayonnaise."
+      description: "Tôm, mực và nghêu xào cùng rau củ — hành tây, bông cải xanh, bí ngòi, nấm, ớt chuông và cải thảo — trên chảo nóng."
     },
     zh: {
       name: "炒海鲜",
-      description: "蟹棒、玉米、洋葱、胡萝卜和蛋黄酱。"
+      description: "虾、鱿鱼和青口贝搭配洋葱、西兰花、西葫芦、蘑菇、甜椒和大白菜，在高温铁板上炒制。"
     }
   },
-
   {
     id: "chicken-sweet-chili",
     category: "hot",
@@ -1090,19 +1089,19 @@ const MENU = [
     hit: false,
     ru: {
       name: "Курица Мат Аунг",
-      description: "Курица в соево-медовом соусе с луком, стручковой фасолью, сладким перцем, грибами и пекинской капустой. Подаётся с белым рисом."
+      description: "Курица в соево-медовом соусе с луком, брокколли, сладким перцем, грибами и пекинской капустой. Подаётся с белым рисом."
     },
     en: {
       name: "Mat Aung Chicken",
-      description: "Chicken in soy-honey sauce with onion, green beans, sweet pepper, mushrooms and Chinese cabbage. Served with white rice."
+      description: "Chicken in a soy–honey sauce with onions, broccoli, sweet peppers, mushrooms, and napa cabbage. Served with white rice."
     },
     vn: {
       name: "Gà Mật Ong",
-      description: "Gà sốt đậu nành mật ong với hành tây, đậu cô ve, ớt chuông, nấm và cải thảo. Ăn kèm cơm trắng."
+      description: "Gà xào sốt mật ong–xì dầu với hành tây, bông cải xanh, ớt chuông, nấm và cải thảo. Dùng kèm cơm trắng."
     },
     zh: {
       name: "蜂蜜酱油鸡",
-      description: "鸡肉配蜂蜜酱油、洋葱、四季豆、甜椒、蘑菇和白菜。搭配白米饭。"
+      description: "鸡肉配酱油蜂蜜酱，搭配洋葱、西兰花、甜椒、蘑菇和大白菜。配白米饭。"
     }
   },
   {
@@ -1165,19 +1164,19 @@ const MENU = [
     hit: false,
     ru: {
       name: "Креветки Мат Аунг",
-      description: "Креветки в соево-медовом соусе, обжаренные с луком, грибами, стручковой фасолью, морковью и пекинской капустой. Подаются с белым рисом."
+      description: "Креветки в соево-медовом соусе, обжаренные с луком, грибами, брокколли, морковью и пекинской капустой. Подаются с белым рисом."
     },
     en: {
       name: "Mat Aung Shrimp",
-      description: "Shrimp in soy-honey sauce, stir-fried with onion, mushrooms, green beans, carrot and Chinese cabbage. Served with white rice."
+      description: "Shrimp in a soy–honey sauce, stir‑fried with onions, mushrooms, broccoli, carrots, and napa cabbage. Served with white rice."
     },
     vn: {
       name: "Tôm Mật Ong",
-      description: "Tôm sốt đậu nành mật ong, xào với hành tây, nấm, đậu cô ve, cà rốt và cải thảo. Ăn kèm cơm trắng."
+      description: "Tôm xào sốt mật ong–xì dầu với hành tây, nấm, bông cải xanh, cà rốt và cải thảo. Dùng kèm cơm trắng."
     },
     zh: {
       name: "蜂蜜酱油虾",
-      description: "虾配蜂蜜酱油，炒洋葱、蘑菇、四季豆、胡萝卜和白菜。搭配白米饭。"
+      description: "虾仁配酱油蜂蜜酱，与洋葱、蘑菇、西兰花、胡萝卜和大白菜一起炒制。配白米饭。"
     }
   },
   {
@@ -1816,25 +1815,25 @@ const MENU = [
     hit: false,
     ru: {
       name: "Нем Хай Сан (3 шт)",
-      description: "Хрустящие вьетнамские роллы с начинкой из креветок, лука и майонеза."
+      description: "Хрустящие вьетнамские роллы с начинкой из крабовых палочек, лука и майонеза."
     },
     en: {
       name: "Seafood Nem (3 pcs)",
-      description: "Crispy Vietnamese rolls with shrimp, onion and mayonnaise filling."
+      description: "Crispy Vietnamese rolls filled with crab sticks, onions, and mayonnaise."
     },
     vn: {
       name: "Nem Hải Sản (3 cái)",
-      description: "Nem giòn với nhân tôm, hành tây và sốt mayonnaise."
+      description: "Chả giò giòn nhân thanh cua, hành tây và sốt mayonnaise."
     },
     zh: {
       name: "海鲜春卷 （3个）",
-      description: "酥脆越南春卷，配虾仁、洋葱和蛋黄酱。"
+      description: "越南脆皮春卷，内馅为蟹棒、洋葱和蛋黄酱。"
     }
   },
   {
     id: "goi-cuon",
     category: "snacks",
-    price: 12,
+    price: 14,
     weight: "Цена",
     image: "images/goi-cuon.webp",
     spicy: false,
@@ -1916,19 +1915,19 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Суксик Нэнг",
+      name: "Суксик Нэнг (3 шт)",
       description: "Вьетнамские сосиски на раскалённых камнях."
     },
     en: {
-      name: "Vietnamese Sausages",
+      name: "Vietnamese Sausages (3 pcs)",
       description: "Vietnamese sausages served on hot stones."
     },
     vn: {
-      name: "Xúc Xích Nướng",
+      name: "Xúc Xích Nướng (3 cái)",
       description: "Xúc xích Việt Nam phục vụ trên đá nóng."
     },
     zh: {
-      name: "越南烤香肠",
+      name: "越南烤香肠 (3个)",
       description: "热石越南香肠。"
     }
   },
@@ -2146,7 +2145,7 @@ const MENU = [
     "tofu-sweet-chili": ["vegan"],
     "eggplant-kai": ["vegan"],
     "crispy-broccoli": ["vegan"],
-    "white-rice": ["vegan"],
+    // "white-rice": ["vegan"],
     // "banh-bot-mi": ["vegan"],
     "smashed-cucumbers": ["vegan"],
     "beer-set": ["sets"],
