@@ -33,7 +33,7 @@ const MENU = [
     hit: true,
     ru: {
       name: "Фо Бо с обжаренной говядиной",
-      description: "Легендарный вьетнамский суп обжаренной на сковороде говядиной, рисовой лапшой, наваристым бульоном и большим количеством зелени. Подаётся с чесночным уксусом, острым перцем и лимоном."
+      description: "Легендарный вьетнамский суп с обжаренной на сковороде говядиной, рисовой лапшой, наваристым бульоном и большим количеством зелени. Подаётся с чесночным уксусом, острым перцем и лимоном."
     },
     en: {
       name: "Pan‑seared Beef Pho",
@@ -263,11 +263,11 @@ const MENU = [
     spicy: false,
     hit: true,
     ru: {
-      name: "Ми Том с курицей",
+      name: "Ми Том Cao с курицей",
       description: "Жареная вьетнамская лапша с курицей, луком, грибами, брокколи и пекинской капустой в воке."
     },
     en: {
-      name: "Mi Tom with Chicken",
+      name: "Mi Tom Xao with Chicken",
       description: "Fried Vietnamese noodles with chicken, onion, mushrooms, broccoli and Chinese cabbage in a wok."
     },
     vn: {
@@ -275,7 +275,7 @@ const MENU = [
       description: "Mì Việt Nam xào với gà, hành tây, nấm, bông cải xanh và cải thảo."
     },
     zh: {
-      name: "鸡肉炒越南面",
+      name: "鸡肉炒方便面",
       description: "越南炒面，配鸡肉、洋葱、蘑菇、西兰花和白菜。"
     }
   },
@@ -288,19 +288,19 @@ const MENU = [
     spicy: false,
     hit: true,
     ru: {
-      name: "Ми Том с говядиной (схоже с Ми Том с курицей)",
+      name: "Ми Том Cao с говядиной (схоже с Ми Том Cao с курицей)",
       description: "Жареная вьетнамская лапша с говядиной, луком, грибами, брокколи и пекинской капустой в воке."
     },
     en: {
-      name: "Mi Tom with Beef (Similar to Mi Tom with chicken)",
+      name: "Mi Tom Xao with Beef (Similar to Mi Tom Xao with chicken)",
       description: "Fried Vietnamese noodles with beef, onion, mushrooms, broccoli and Chinese cabbage in a wok."
     },
     vn: {
-      name: "Mì Tôm Xào Bò (Tương tự như Mì Tôm gà)",
+      name: "Mì Tôm Xào Bò (Tương tự như Mì Tôm Xào gà)",
       description: "Mì Việt Nam xào với bò, hành tây, nấm, bông cải xanh và cải thảo."
     },
     zh: {
-      name: "牛肉炒越南面 (类似于鸡肉方便面（Mì Tôm))",
+      name: "牛肉炒方便面 (类似于鸡肉炒方便面（Mì Tôm Xào))",
       description: "越南炒面，配牛肉、洋葱、蘑菇、西兰花和白菜。"
     }
   },
@@ -313,19 +313,19 @@ const MENU = [
     spicy: false,
     hit: true,
     ru: {
-      name: "Ми Том с креветками (схоже с Ми Том с курицей)",
+      name: "Ми Том с креветками (схоже с Ми Том Cao с курицей)",
       description: "Жареная вьетнамская лапша с креветками, луком, грибами, брокколи и пекинской капустой в воке."
     },
     en: {
-      name: "Mi Tom with Shrimp Similar to Mi Tom with chicken",
+      name: "Mi Tom with Shrimp (Similar to Mi Tom Xao with chicken)",
       description: "Fried Vietnamese noodles with shrimp, onion, mushrooms, broccoli and Chinese cabbage in a wok."
     },
     vn: {
-      name: "Mì Tôm Xào Tôm (Tương tự như Mì Tôm gà)",
+      name: "Mì Tôm Xào Tôm (Tương tự như Mì Tôm Xào gà)",
       description: "Mì Việt Nam xào với tôm, hành tây, nấm, bông cải xanh và cải thảo."
     },
     zh: {
-      name: "鲜虾炒越南面 (类似于鸡肉方便面（Mì Tôm))",
+      name: "虾仁炒方便面（类似于鸡肉炒方便面 Mì Tôm Xào）",
       description: "越南炒面，配鲜虾、洋葱、蘑菇、西兰花和白菜。"
     }
   },
@@ -2116,19 +2116,19 @@ const MENU = [
     hit: false,
     ru: {
       name: "Тайский Red Bull",
-      description: "Thai Red Bull, известный в Таиланде как Krating Daeng («Красный гаур»), — оригинальный, негазированный энергетический напиток, ставший вдохновением для мирового бренда Red Bull. Это сладкий, очень концентрированный сироп с фруктово‑медовым вкусом, который традиционно продаётся в небольших стеклянных бутылках по 150 мл."
+      description: "Thai Red Bull, известный в Таиланде как Krating Daeng («Красный гаур»), — оригинальный, негазированный энергетический напиток, ставший вдохновением для мирового бренда Red Bull."
     },
     en: {
       name: "Thai Red Bull",
-      description: "Thai Red Bull, known locally as Krating Daeng (meaning \"Red Gaur\"), is the original, non-carbonated energy drink that inspired the global Red Bull brand. It is a sweet, highly concentrated syrup with a fruity, honey-like flavor, traditionally sold in small 150ml glass bottles."
+      description: "Thai Red Bull, known locally as Krating Daeng (meaning \"Red Gaur\"), is the original, non-carbonated energy drink that inspired the global Red Bull brand."
     },
     vn: {
       name: "Red Bull Thái Lan",
-      description: "Thai Red Bull, hay còn gọi là Krating Daeng (nghĩa là “Bò rừng đỏ”), là loại nước tăng lực nguyên bản không ga, truyền cảm hứng cho thương hiệu Red Bull toàn cầu. Thức uống này có dạng siro đậm đặc, vị ngọt, hơi trái cây và mật ong, thường được bán trong chai thủy tinh 150ml."
+      description: "Thai Red Bull, hay còn gọi là Krating Daeng (nghĩa là “Bò rừng đỏ”), là loại nước tăng lực nguyên bản không ga, truyền cảm hứng cho thương hiệu Red Bull toàn cầu."
     },
     zh: {
       name: "泰国红牛",
-      description: "Thai Red Bull，当地称为 Krating Daeng（意为“红野牛”），是最初的无气能量饮料，也是全球 Red Bull 品牌的灵感来源。它是一种甜味、高浓度的糖浆状饮品，带有水果和蜂蜜的风味，传统上以150毫升的小玻璃瓶出售。"
+      description: "Thai Red Bull，当地称为 Krating Daeng（意为“红野牛”），是最初的无气能量饮料，也是全球 Red Bull 品牌的灵感来源。"
     }
   }
 ];
