@@ -104,56 +104,56 @@ const MENU = [
       description: "酸辣泰式汤，配虾、青口贝、鱿鱼、蘑菇、香菇和椰奶。搭配米饭。"
     }
   },
-  {
-    id: "tom-kha",
-    category: "soups",
-    price: 18,
-    weight: "Цена",
-    image: "images/tom-kha.png",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Том Кха",
-      description: "Нежный кокосовый суп с курицей, грибами и ароматом лемонграсса. Баланс сливочного вкуса, лёгкой кислинки и азиатских специй."
-    },
-    en: {
-      name: "Tom Kha",
-      description: "Delicate coconut soup with chicken, mushrooms and lemongrass aroma. A balance of creamy taste, light sourness and Asian spices."
-    },
-    vn: {
-      name: "Tom Kha",
-      description: "Súp dừa nhẹ với gà, nấm và hương sả. Vị béo dịu, chua nhẹ và gia vị châu Á."
-    },
-    zh: {
-      name: "椰香鸡汤",
-      description: "柔和椰奶汤，配鸡肉、蘑菇和香茅，带有奶香、微酸和亚洲香料风味。"
-    }
-  },
-  {
-    id: "laksa",
-    category: "soups",
-    price: 20,
-    weight: "Цена",
-    image: "images/laksa.png",
-    spicy: true,
-    hit: false,
-    ru: {
-      name: "Лакса",
-      description: "Насыщенный пряный суп на кокосовом молоке с лапшой и морепродуктами."
-    },
-    en: {
-      name: "Laksa",
-      description: "Rich spicy coconut milk soup with noodles and seafood."
-    },
-    vn: {
-      name: "Laksa",
-      description: "Súp cay đậm vị với nước cốt dừa, mì và hải sản."
-    },
-    zh: {
-      name: "叻沙",
-      description: "浓郁辛香椰奶汤，配面条和海鲜。"
-    }
-  },
+  // {
+  //   id: "tom-kha",
+  //   category: "soups",
+  //   price: 18,
+  //   weight: "Цена",
+  //   image: "images/tom-kha.png",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Том Кха",
+  //     description: "Нежный кокосовый суп с курицей, грибами и ароматом лемонграсса. Баланс сливочного вкуса, лёгкой кислинки и азиатских специй."
+  //   },
+  //   en: {
+  //     name: "Tom Kha",
+  //     description: "Delicate coconut soup with chicken, mushrooms and lemongrass aroma. A balance of creamy taste, light sourness and Asian spices."
+  //   },
+  //   vn: {
+  //     name: "Tom Kha",
+  //     description: "Súp dừa nhẹ với gà, nấm và hương sả. Vị béo dịu, chua nhẹ và gia vị châu Á."
+  //   },
+  //   zh: {
+  //     name: "椰香鸡汤",
+  //     description: "柔和椰奶汤，配鸡肉、蘑菇和香茅，带有奶香、微酸和亚洲香料风味。"
+  //   }
+  // },
+  // {
+  //   id: "laksa",
+  //   category: "soups",
+  //   price: 20,
+  //   weight: "Цена",
+  //   image: "images/laksa.png",
+  //   spicy: true,
+  //   hit: false,
+  //   ru: {
+  //     name: "Лакса",
+  //     description: "Насыщенный пряный суп на кокосовом молоке с лапшой и морепродуктами."
+  //   },
+  //   en: {
+  //     name: "Laksa",
+  //     description: "Rich spicy coconut milk soup with noodles and seafood."
+  //   },
+  //   vn: {
+  //     name: "Laksa",
+  //     description: "Súp cay đậm vị với nước cốt dừa, mì và hải sản."
+  //   },
+  //   zh: {
+  //     name: "叻沙",
+  //     description: "浓郁辛香椰奶汤，配面条和海鲜。"
+  //   }
+  // },
   {
     id: "pho-bo-chin",
     category: "soups",
@@ -1104,31 +1104,31 @@ const MENU = [
       description: "鸡肉配酱油蜂蜜酱，搭配洋葱、西兰花、甜椒、蘑菇和大白菜。配白米饭。"
     }
   },
-  {
-    id: "chicken-cam",
-    category: "hot",
-    price: 19,
-    weight: "Цена",
-    image: "images/chicken-cam.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Курица Кам",
-      description: "Хрустящая курица в апельсиновом соусе с бобами эдамаме. Подаётся с белым рисом."
-    },
-    en: {
-      name: "Orange Chicken",
-      description: "Crispy chicken in orange sauce with edamame. Served with white rice."
-    },
-    vn: {
-      name: "Gà Sốt Cam",
-      description: "Gà giòn sốt cam với edamame. Ăn kèm cơm trắng."
-    },
-    zh: {
-      name: "橙汁鸡",
-      description: "脆鸡肉配橙汁酱和毛豆。搭配白米饭。"
-    }
-  },
+  // {
+  //   id: "chicken-cam",
+  //   category: "hot",
+  //   price: 19,
+  //   weight: "Цена",
+  //   image: "images/chicken-cam.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Курица Кам",
+  //     description: "Хрустящая курица в апельсиновом соусе с бобами эдамаме. Подаётся с белым рисом."
+  //   },
+  //   en: {
+  //     name: "Orange Chicken",
+  //     description: "Crispy chicken in orange sauce with edamame. Served with white rice."
+  //   },
+  //   vn: {
+  //     name: "Gà Sốt Cam",
+  //     description: "Gà giòn sốt cam với edamame. Ăn kèm cơm trắng."
+  //   },
+  //   zh: {
+  //     name: "橙汁鸡",
+  //     description: "脆鸡肉配橙汁酱和毛豆。搭配白米饭。"
+  //   }
+  // },
   {
     id: "chicken-kai",
     category: "hot",
@@ -1505,31 +1505,31 @@ const MENU = [
       description: "酱油鸡蛋炒饭。"
     }
   },
-  {
-    id: "banh-bot-mi",
-    category: "extra",
-    price: 6,
-    weight: "Цена",
-    image: "images/banh-bot-mi.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Бань Бот Ми",
-      description: "Вьетнамские лепёшки с зелёным луком."
-    },
-    en: {
-      name: "Banh Bot Mi",
-      description: "Vietnamese flatbreads with green onion."
-    },
-    vn: {
-      name: "Bánh Bột Mì",
-      description: "Bánh bột mì Việt Nam với hành lá."
-    },
-    zh: {
-      name: "越南葱饼",
-      description: "越南风味葱香面饼。"
-    }
-  },
+  // {
+  //   id: "banh-bot-mi",
+  //   category: "extra",
+  //   price: 6,
+  //   weight: "Цена",
+  //   image: "images/banh-bot-mi.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Бань Бот Ми",
+  //     description: "Вьетнамские лепёшки с зелёным луком."
+  //   },
+  //   en: {
+  //     name: "Banh Bot Mi",
+  //     description: "Vietnamese flatbreads with green onion."
+  //   },
+  //   vn: {
+  //     name: "Bánh Bột Mì",
+  //     description: "Bánh bột mì Việt Nam với hành lá."
+  //   },
+  //   zh: {
+  //     name: "越南葱饼",
+  //     description: "越南风味葱香面饼。"
+  //   }
+  // },
   {
     id: "strips-fries",
     category: "kids",
@@ -1605,56 +1605,56 @@ const MENU = [
   //     description: ""
   //   }
   // },
-  {
-    id: "sleeping-bear",
-    category: "kids",
-    price: 16,
-    weight: "Цена",
-    image: "images/sleeping-bear.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Спящий мишка",
-      description: "Рис в форме мишки с одеялом из омлета и подушкой из жареной курицы и фасоли в соусе терияки."
-    },
-    en: {
-      name: "Sleeping Bear",
-      description: "Bear-shaped rice with an omelet blanket and a pillow of fried chicken and beans in teriyaki sauce."
-    },
-    vn: {
-      name: "Gấu Ngủ",
-      description: "Cơm hình gấu với chăn trứng, gà chiên và đậu sốt teriyaki."
-    },
-    zh: {
-      name: "睡觉小熊",
-      description: "小熊造型米饭，配蛋皮被子、照烧鸡肉和豆类。"
-    }
-  },
-  {
-    id: "octopus-pool",
-    category: "kids",
-    price: 15,
-    weight: "Цена",
-    image: "images/octopus-in-the-pool.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Осьминожки в бассейне",
-      description: "Сосиски в виде осьминогов с рисом и соусом."
-    },
-    en: {
-      name: "Octopuses in the Pool",
-      description: "Octopus-shaped sausages with rice and sauce."
-    },
-    vn: {
-      name: "Bạch Tuộc Trong Hồ",
-      description: "Xúc xích tạo hình bạch tuộc ăn cùng cơm và sốt."
-    },
-    zh: {
-      name: "泳池小章鱼",
-      description: "章鱼造型香肠，配米饭和酱汁。"
-    }
-  },
+  // {
+  //   id: "sleeping-bear",
+  //   category: "kids",
+  //   price: 16,
+  //   weight: "Цена",
+  //   image: "images/sleeping-bear.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Спящий мишка",
+  //     description: "Рис в форме мишки с одеялом из омлета и подушкой из жареной курицы и фасоли в соусе терияки."
+  //   },
+  //   en: {
+  //     name: "Sleeping Bear",
+  //     description: "Bear-shaped rice with an omelet blanket and a pillow of fried chicken and beans in teriyaki sauce."
+  //   },
+  //   vn: {
+  //     name: "Gấu Ngủ",
+  //     description: "Cơm hình gấu với chăn trứng, gà chiên và đậu sốt teriyaki."
+  //   },
+  //   zh: {
+  //     name: "睡觉小熊",
+  //     description: "小熊造型米饭，配蛋皮被子、照烧鸡肉和豆类。"
+  //   }
+  // },
+  // {
+  //   id: "octopus-pool",
+  //   category: "kids",
+  //   price: 15,
+  //   weight: "Цена",
+  //   image: "images/octopus-in-the-pool.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Осьминожки в бассейне",
+  //     description: "Сосиски в виде осьминогов с рисом и соусом."
+  //   },
+  //   en: {
+  //     name: "Octopuses in the Pool",
+  //     description: "Octopus-shaped sausages with rice and sauce."
+  //   },
+  //   vn: {
+  //     name: "Bạch Tuộc Trong Hồ",
+  //     description: "Xúc xích tạo hình bạch tuộc ăn cùng cơm và sốt."
+  //   },
+  //   zh: {
+  //     name: "泳池小章鱼",
+  //     description: "章鱼造型香肠，配米饭和酱汁。"
+  //   }
+  // },
   {
     id: "banh-bao",
     category: "snacks",
@@ -1805,31 +1805,31 @@ const MENU = [
       description: "酥脆越南春卷，配肉馅、粉丝、胡萝卜、洋葱和木耳。"
     }
   },
-  {
-    id: "nem-hai-san",
-    category: "snacks",
-    price: 21,
-    weight: "Цена",
-    image: "images/nem-hai-san.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Нем Хай Сан (3 шт)",
-      description: "Хрустящие вьетнамские роллы с начинкой из крабовых палочек, лука и майонеза."
-    },
-    en: {
-      name: "Seafood Nem (3 pcs)",
-      description: "Crispy Vietnamese rolls filled with crab sticks, onions, and mayonnaise."
-    },
-    vn: {
-      name: "Nem Hải Sản (3 cái)",
-      description: "Chả giò giòn nhân thanh cua, hành tây và sốt mayonnaise."
-    },
-    zh: {
-      name: "海鲜春卷 （3个）",
-      description: "越南脆皮春卷，内馅为蟹棒、洋葱和蛋黄酱。"
-    }
-  },
+  // {
+  //   id: "nem-hai-san",
+  //   category: "snacks",
+  //   price: 21,
+  //   weight: "Цена",
+  //   image: "images/nem-hai-san.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Нем Хай Сан (3 шт)",
+  //     description: "Хрустящие вьетнамские роллы с начинкой из крабовых палочек, лука и майонеза."
+  //   },
+  //   en: {
+  //     name: "Seafood Nem (3 pcs)",
+  //     description: "Crispy Vietnamese rolls filled with crab sticks, onions, and mayonnaise."
+  //   },
+  //   vn: {
+  //     name: "Nem Hải Sản (3 cái)",
+  //     description: "Chả giò giòn nhân thanh cua, hành tây và sốt mayonnaise."
+  //   },
+  //   zh: {
+  //     name: "海鲜春卷 （3个）",
+  //     description: "越南脆皮春卷，内馅为蟹棒、洋葱和蛋黄酱。"
+  //   }
+  // },
   {
     id: "goi-cuon",
     category: "snacks",
@@ -1931,31 +1931,31 @@ const MENU = [
       description: "热石越南香肠。"
     }
   },
-  {
-    id: "pho-mai-chien",
-    category: "snacks",
-    price: 16,
-    weight: "Цена",
-    image: "images/pho-mai-chien.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Фо Май Чиен",
-      description: "Жареный сыр моцарелла с хрустящей корочкой."
-    },
-    en: {
-      name: "Fried Mozzarella",
-      description: "Fried mozzarella cheese with crispy crust."
-    },
-    vn: {
-      name: "Phô Mai Chiên",
-      description: "Phô mai mozzarella chiên giòn."
-    },
-    zh: {
-      name: "炸芝士",
-      description: "香脆炸马苏里拉芝士。"
-    }
-  },
+  // {
+  //   id: "pho-mai-chien",
+  //   category: "snacks",
+  //   price: 16,
+  //   weight: "Цена",
+  //   image: "images/pho-mai-chien.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Фо Май Чиен",
+  //     description: "Жареный сыр моцарелла с хрустящей корочкой."
+  //   },
+  //   en: {
+  //     name: "Fried Mozzarella",
+  //     description: "Fried mozzarella cheese with crispy crust."
+  //   },
+  //   vn: {
+  //     name: "Phô Mai Chiên",
+  //     description: "Phô mai mozzarella chiên giòn."
+  //   },
+  //   zh: {
+  //     name: "炸芝士",
+  //     description: "香脆炸马苏里拉芝士。"
+  //   }
+  // },
   // {
   //   id: "beer-set",
   //   category: "snacks",
