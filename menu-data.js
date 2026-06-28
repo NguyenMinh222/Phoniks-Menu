@@ -1089,19 +1089,19 @@ const MENU = [
     hit: false,
     ru: {
       name: "Курица Мат Аунг",
-      description: "Курица в соево-медовом соусе с луком, брокколли, сладким перцем, грибами и пекинской капустой. Подаётся с белым рисом."
+      description: "Хрустящая курица в соево-медовом соусе с луком, брокколли, сладким перцем, грибами и пекинской капустой. Подаётся с белым рисом."
     },
     en: {
       name: "Mat Aung Chicken",
-      description: "Chicken in a soy–honey sauce with onions, broccoli, sweet peppers, mushrooms, and napa cabbage. Served with white rice."
+      description: "Crispy chicken in a soy–honey sauce with onions, broccoli, sweet peppers, mushrooms, and napa cabbage. Served with white rice."
     },
     vn: {
       name: "Gà Mật Ong",
-      description: "Gà xào sốt mật ong–xì dầu với hành tây, bông cải xanh, ớt chuông, nấm và cải thảo. Dùng kèm cơm trắng."
+      description: "Gà giòn sốt mật ong–xì dầu, xào cùng hành tây, bông cải xanh, ớt chuông, nấm và cải thảo. Dùng kèm cơm trắng."
     },
     zh: {
       name: "蜂蜜酱油鸡",
-      description: "鸡肉配酱油蜂蜜酱，搭配洋葱、西兰花、甜椒、蘑菇和大白菜。配白米饭。"
+      description: "香脆鸡肉配酱油蜂蜜酱，搭配洋葱、西兰花、甜椒、蘑菇和大白菜。配白米饭。"
     }
   },
   // {
