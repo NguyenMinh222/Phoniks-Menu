@@ -1032,7 +1032,7 @@ const MENU = [
   {
     id: "hai-san-sao",
     category: "hot",
-    price: 29,
+    price: 32,
     weight: "Цена",
     image: "images/hai-san.webp",
     spicy: false,
