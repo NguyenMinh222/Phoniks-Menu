@@ -882,7 +882,7 @@ const MENU = [
   {
     id: "bun-cha-nem",
     category: "hot",
-    price: 29,
+    price: 34,
     weight: "Цена",
     image: "images/bun-cha-nem.webp",
     spicy: false,
