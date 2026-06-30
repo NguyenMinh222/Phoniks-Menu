@@ -44,7 +44,7 @@ const MENU = [
       description: "Món phở Việt Nam trứ danh với thịt bò áp chảo, bánh phở mềm, nước dùng đậm đà và nhiều rau thơm. Ăn kèm giấm tỏi, ớt cay và một miếng chanh."
     },
     zh: {
-      name: "铁板煎牛肉河粉",
+      name: "铁板煎牛肉河粉 (Фо Бо с обжаренной говядиной)",
       description: "传奇越南汤品，配煎香牛肉、河粉、浓郁高汤和大量新鲜香草。佐以蒜醋、辣椒和柠檬片。"
     }
   },
@@ -69,7 +69,7 @@ const MENU = [
       description: "Phở gà truyền thống với bánh phở, rau thơm và nước dùng đậm đà. Ăn kèm giấm tỏi, ớt và chanh."
     },
     zh: {
-      name: "鸡肉粉",
+      name: "鸡肉粉 (Фо Га)",
       description: "传统越南鸡肉河粉，配香草和浓郁汤底。搭配蒜醋、辣椒和柠檬。"
     }
   },
@@ -100,60 +100,60 @@ const MENU = [
       description: "Súp Thái cay với tôm, vẹm, mực, nấm, nấm hương và nước cốt dừa. Ăn kèm cơm."
     },
     zh: {
-      name: "冬阴功汤",
+      name: "冬阴功汤 (Том Ям)",
       description: "酸辣泰式汤，配虾、青口贝、鱿鱼、蘑菇、香菇和椰奶。搭配米饭。"
     }
   },
-  // {
-  //   id: "tom-kha",
-  //   category: "soups",
-  //   price: 18,
-  //   weight: "Цена",
-  //   image: "images/tom-kha.png",
-  //   spicy: false,
-  //   hit: false,
-  //   ru: {
-  //     name: "Том Кха",
-  //     description: "Нежный кокосовый суп с курицей, грибами и ароматом лемонграсса. Баланс сливочного вкуса, лёгкой кислинки и азиатских специй."
-  //   },
-  //   en: {
-  //     name: "Tom Kha",
-  //     description: "Delicate coconut soup with chicken, mushrooms and lemongrass aroma. A balance of creamy taste, light sourness and Asian spices."
-  //   },
-  //   vn: {
-  //     name: "Tom Kha",
-  //     description: "Súp dừa nhẹ với gà, nấm và hương sả. Vị béo dịu, chua nhẹ và gia vị châu Á."
-  //   },
-  //   zh: {
-  //     name: "椰香鸡汤",
-  //     description: "柔和椰奶汤，配鸡肉、蘑菇和香茅，带有奶香、微酸和亚洲香料风味。"
-  //   }
-  // },
-  // {
-  //   id: "laksa",
-  //   category: "soups",
-  //   price: 20,
-  //   weight: "Цена",
-  //   image: "images/laksa.png",
-  //   spicy: true,
-  //   hit: false,
-  //   ru: {
-  //     name: "Лакса",
-  //     description: "Насыщенный пряный суп на кокосовом молоке с лапшой и морепродуктами."
-  //   },
-  //   en: {
-  //     name: "Laksa",
-  //     description: "Rich spicy coconut milk soup with noodles and seafood."
-  //   },
-  //   vn: {
-  //     name: "Laksa",
-  //     description: "Súp cay đậm vị với nước cốt dừa, mì và hải sản."
-  //   },
-  //   zh: {
-  //     name: "叻沙",
-  //     description: "浓郁辛香椰奶汤，配面条和海鲜。"
-  //   }
-  // },
+  {
+    id: "tom-kha",
+    category: "soups",
+    price: 18,
+    weight: "Цена",
+    image: "images/tom-kha.png",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Том Кха",
+      description: "Нежный кокосовый суп с курицей, грибами и ароматом лемонграсса. Баланс сливочного вкуса, лёгкой кислинки и азиатских специй."
+    },
+    en: {
+      name: "Tom Kha",
+      description: "Delicate coconut soup with chicken, mushrooms and lemongrass aroma. A balance of creamy taste, light sourness and Asian spices."
+    },
+    vn: {
+      name: "Tom Kha",
+      description: "Súp dừa nhẹ với gà, nấm và hương sả. Vị béo dịu, chua nhẹ và gia vị châu Á."
+    },
+    zh: {
+      name: "椰香鸡汤 (Том Кха)",
+      description: "柔和椰奶汤，配鸡肉、蘑菇和香茅，带有奶香、微酸和亚洲香料风味。"
+    }
+  },
+  {
+    id: "laksa",
+    category: "soups",
+    price: 20,
+    weight: "Цена",
+    image: "images/laksa.png",
+    spicy: true,
+    hit: false,
+    ru: {
+      name: "Лакса",
+      description: "Насыщенный пряный суп на кокосовом молоке с лапшой и морепродуктами."
+    },
+    en: {
+      name: "Laksa",
+      description: "Rich spicy coconut milk soup with noodles and seafood."
+    },
+    vn: {
+      name: "Laksa",
+      description: "Súp cay đậm vị với nước cốt dừa, mì và hải sản."
+    },
+    zh: {
+      name: "叻沙 (Лакса)",
+      description: "浓郁辛香椰奶汤，配面条和海鲜。"
+    }
+  },
   {
     id: "pho-bo-chin",
     category: "soups",
@@ -175,7 +175,7 @@ const MENU = [
       description: "Phở truyền thống với bánh phở mềm, nước dùng bò đậm đà hương vị thảo mộc và thịt nạc chín kỹ."
     },
     zh: {
-      name: "熟牛肉河粉",
+      name: "熟牛肉河粉 (Фо Бо Чин)",
       description: "传统越南河粉，配以浓郁芳香的牛骨药膳汤底和熟透、鲜嫩的牛腩肉。"
     }
   },
@@ -200,7 +200,7 @@ const MENU = [
       description: "Bánh phở trong nước dùng đậm đà với tôm và rau thơm tươi."
     },
     zh: {
-      name: "鲜虾河粉",
+      name: "鲜虾河粉 (Фо Том)",
       description: "浓郁汤底米粉，配鲜虾和新鲜香草。"
     }
   },
@@ -225,7 +225,7 @@ const MENU = [
       description: "Bánh phở trong nước dùng đậm đà với đậu phụ và rau thơm tươi."
     },
     zh: {
-      name: "豆腐河粉",
+      name: "豆腐河粉 (Фо Тофу)",
       description: "浓郁汤底米粉，配豆腐和新鲜香草。"
     }
   },
@@ -250,7 +250,7 @@ const MENU = [
       description: "Súp mì Việt Nam với nước dùng đậm đà, gà, cải thảo và trứng chiên."
     },
     zh: {
-      name: "越南汤面",
+      name: "越南汤面 (Ми Том)",
       description: "越南汤面，配浓郁汤底、鸡肉、白菜和煎蛋。"
     }
   },
@@ -275,7 +275,7 @@ const MENU = [
       description: "Mì Việt Nam xào với gà, hành tây, nấm, bông cải xanh và cải thảo."
     },
     zh: {
-      name: "鸡肉炒方便面",
+      name: "鸡肉炒方便面 (Ми Том Cao с курицей)",
       description: "越南炒面，配鸡肉、洋葱、蘑菇、西兰花和白菜。"
     }
   },
@@ -300,7 +300,7 @@ const MENU = [
       description: "Mì Việt Nam xào với bò, hành tây, nấm, bông cải xanh và cải thảo."
     },
     zh: {
-      name: "牛肉炒方便面 (类似于鸡肉炒方便面（Mì Tôm Xào))",
+      name: "牛肉炒方便面 (类似于鸡肉炒方便面（Mì Tôm Xào)) (Ми Том Cao с говядиной)",
       description: "越南炒面，配牛肉、洋葱、蘑菇、西兰花和白菜。"
     }
   },
@@ -325,7 +325,7 @@ const MENU = [
       description: "Mì Việt Nam xào với tôm, hành tây, nấm, bông cải xanh và cải thảo."
     },
     zh: {
-      name: "虾仁炒方便面（类似于鸡肉炒方便面 Mì Tôm Xào）",
+      name: "虾仁炒方便面（类似于鸡肉炒方便面 Mì Tôm Xào） (Ми Том с креветками)",
       description: "越南炒面，配鲜虾、洋葱、蘑菇、西兰花和白菜。"
     }
   },
@@ -350,7 +350,7 @@ const MENU = [
       description: "Phở xào với bò, hành tây, đậu cô ve, bí ngòi, edamame, ớt chuông và cà rốt."
     },
     zh: {
-      name: "牛肉炒河粉",
+      name: "牛肉炒河粉 (Фо Сао с говядиной)",
       description: "炒河粉，配牛肉、洋葱、四季豆、西葫芦、毛豆、甜椒和胡萝卜。"
     }
   },
@@ -375,7 +375,7 @@ const MENU = [
       description: "Phở xào với gà, hành tây, đậu cô ve, bí ngòi, edamame, ớt chuông và cà rốt."
     },
     zh: {
-      name: "鸡肉炒河粉 (类似于炒牛肉河粉（Phở Xào))",
+      name: "鸡肉炒河粉 (类似于炒牛肉河粉（Phở Xào)) (Фо Сао с курицей)",
       description: "炒河粉，配鸡肉、洋葱、四季豆、西葫芦、毛豆、甜椒和胡萝卜。"
     }
   },
@@ -400,7 +400,7 @@ const MENU = [
       description: "Phở xào với tôm, hành tây, đậu cô ve, bí ngòi, edamame, ớt chuông và cà rốt."
     },
     zh: {
-      name: "鲜虾炒河粉 (类似于炒牛肉河粉（Phở Xào))",
+      name: "鲜虾炒河粉 (类似于炒牛肉河粉（Phở Xào)) (Фо Сао с креветками)",
       description: "炒河粉，配鲜虾、洋葱、四季豆、西葫芦、毛豆、甜椒和胡萝卜。"
     }
   },
@@ -425,7 +425,7 @@ const MENU = [
       description: "Phở xào với hai loại thịt tùy chọn, hành tây, đậu cô ve, bí ngòi, edamame, ớt chuông và cà rốt."
     },
     zh: {
-      name: "混合炒河粉",
+      name: "混合炒河粉 (Фо Сао микс)",
       description: "炒河粉，可选两种肉，配洋葱、四季豆、西葫芦、毛豆、甜椒和胡萝卜。"
     }
   },
@@ -450,7 +450,7 @@ const MENU = [
       description: "Miến trộn với tôm, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
-      name: "鲜虾粉丝",
+      name: "鲜虾粉丝 (Миен с креветками)",
       description: "粉丝配虾、葱、蘑菇、甜椒和西兰花。"
     }
   },
@@ -475,7 +475,7 @@ const MENU = [
       description: "Miến trộn với thịt gà, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
-      name: "鸡肉粉丝 (类似于虾粉丝)",
+      name: "鸡肉粉丝 (类似于虾粉丝) (Миен с курицей)",
       description: "粉丝配鸡肉、葱、蘑菇、甜椒和西兰花。"
     }
   },
@@ -500,7 +500,7 @@ const MENU = [
       description: "Miến trộn với thịt bò, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
-      name: "牛肉粉丝 (类似于虾粉丝)",
+      name: "牛肉粉丝 (类似于虾粉丝) (Миен с говядиной)",
       description: "粉丝配牛肉、葱、蘑菇、甜椒和西兰花。"
     }
   },
@@ -525,7 +525,7 @@ const MENU = [
       description: "Mì trứng xào với gà, hành tây, edamame, đậu cô ve, ớt chuông và cà rốt."
     },
     zh: {
-      name: "鸡肉炒蛋面",
+      name: "鸡肉炒蛋面 (Вок с курицей)",
       description: "蛋面配鸡肉、洋葱、毛豆、四季豆、甜椒和胡萝卜。"
     }
   },
@@ -550,7 +550,7 @@ const MENU = [
       description: "Mì trứng xào với bò, hành tây, edamame, đậu cô ve, ớt chuông và cà rốt."
     },
     zh: {
-      name: "牛肉炒蛋面 (类似于鸡肉炒面)",
+      name: "牛肉炒蛋面 (类似于鸡肉炒面) (Вок с говядиной)",
       description: "蛋面配牛肉、洋葱、毛豆、四季豆、甜椒和胡萝卜。"
     }
   },
@@ -575,7 +575,7 @@ const MENU = [
       description: "Mì udon với bò sốt unagi mặn ngọt, hành tây, nấm mỡ, nấm hương và tỏi tây."
     },
     zh: {
-      name: "鳗鱼汁牛肉乌冬",
+      name: "鳗鱼汁牛肉乌冬 (Удон с говядиной унаги)",
       description: "乌冬面配牛肉、甜咸鳗鱼汁、洋葱、蘑菇、香菇和大葱。"
     }
   },
@@ -600,7 +600,7 @@ const MENU = [
       description: "Mì udon với tôm sốt cà ri cay, hành tây, edamame, đậu cô ve, bông cải xanh và cà rốt."
     },
     zh: {
-      name: "咖喱虾乌冬",
+      name: "咖喱虾乌冬 (Удон с креветками карри)",
       description: "乌冬面配鲜虾、咖喱酱、洋葱、毛豆、四季豆、西兰花和胡萝卜。"
     }
   },
@@ -625,7 +625,7 @@ const MENU = [
       description: "Mì udon với gà sốt cà ri đậm vị, hành tây, edamame, đậu cô ve, bông cải xanh và cà rốt."
     },
     zh: {
-      name: "咖喱鸡乌冬",
+      name: "咖喱鸡乌冬 (Удон с курицей карри)",
       description: "乌冬面配鸡肉、咖喱酱、洋葱、毛豆、四季豆、西兰花和胡萝卜。"
     }
   },
@@ -650,7 +650,7 @@ const MENU = [
       description: "Mì Việt Nam với gà xào sốt mayo ớt, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên, đậu phộng và sốt unagi."
     },
     zh: {
-      name: "鸡肉拌面",
+      name: "鸡肉拌面 (Ми Чон с курицей)",
       description: "越南面配蛋黄辣酱鸡肉、黄瓜、甜椒、海藻、蘑菇、煎蛋、花生和鳗鱼汁。"
     }
   },
@@ -675,7 +675,7 @@ const MENU = [
       description: "Mì Việt Nam với bò xào sốt hàu-unagi, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên và đậu phộng."
     },
     zh: {
-      name: "牛肉拌面 (类似于鸡肉拌面)",
+      name: "牛肉拌面 (类似于鸡肉拌面) (Ми Чон с говядиной)",
       description: "越南面配蚝油鳗鱼汁牛肉、黄瓜、甜椒、海藻、蘑菇、煎蛋和花生。"
     }
   },
@@ -700,7 +700,7 @@ const MENU = [
       description: "Mì Việt Nam với tôm xào sốt mayo ớt, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên, đậu phộng và sốt unagi."
     },
     zh: {
-      name: "鲜虾拌面 (类似于鸡肉拌面)",
+      name: "鲜虾拌面 (类似于鸡肉拌面) (Ми Чон с креветками)",
       description: "越南面配蛋黄辣酱鲜虾、黄瓜、甜椒、海藻、蘑菇、煎蛋、花生和鳗鱼汁。"
     }
   },
@@ -725,7 +725,7 @@ const MENU = [
       description: "Cơm với tôm xào sốt mayo ớt, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên, đậu phộng và sốt unagi."
     },
     zh: {
-      name: "鲜虾拌饭",
+      name: "鲜虾拌饭 (Кэм Чон с креветками)",
       description: "米饭配蛋黄辣酱鲜虾、黄瓜、甜椒、海藻、蘑菇、煎蛋、花生和鳗鱼汁。"
     }
   },
@@ -750,7 +750,7 @@ const MENU = [
       description: "Cơm với bò xào sốt hàu-unagi, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên và đậu phộng."
     },
     zh: {
-      name: "牛肉拌饭 (类似于虾拌饭)",
+      name: "牛肉拌饭 (类似于虾拌饭) (Кэм Чон с говядиной)",
       description: "米饭配蚝油鳗鱼汁牛肉、黄瓜、甜椒、海藻、蘑菇、煎蛋和花生。"
     }
   },
@@ -775,7 +775,7 @@ const MENU = [
       description: "Cơm với gà xào sốt mayo ớt, dưa leo, ớt chuông, rong biển chuka, nấm, trứng chiên, đậu phộng và sốt unagi."
     },
     zh: {
-      name: "鸡肉拌饭 (类似于虾拌饭)",
+      name: "鸡肉拌饭 (类似于虾拌饭) (Кэм Чон с курицей)",
       description: "米饭配蛋黄辣酱鸡肉、黄瓜、甜椒、海藻、蘑菇、煎蛋、花生和鳗鱼汁。"
     }
   },
@@ -800,7 +800,7 @@ const MENU = [
       description: "Cơm rang với gà, hành tây, cà rốt, edamame, đậu cô ve và bông cải xanh."
     },
     zh: {
-      name: "鸡肉炒饭",
+      name: "鸡肉炒饭 (Кэм Занг с курицей)",
       description: "炒饭配鸡肉、洋葱、胡萝卜、毛豆、四季豆和西兰花。"
     }
   },
@@ -825,7 +825,7 @@ const MENU = [
       description: "Cơm rang với bò, hành tây, cà rốt, edamame, đậu cô ve và bông cải xanh."
     },
     zh: {
-      name: "牛肉炒饭",
+      name: "牛肉炒饭 (Кэм Занг с говядиной)",
       description: "炒饭配牛肉、洋葱、胡萝卜、毛豆、四季豆和西兰花。"
     }
   },
@@ -850,7 +850,7 @@ const MENU = [
       description: "Cơm rang với tôm, hành tây, cà rốt, edamame, đậu cô ve và bông cải xanh."
     },
     zh: {
-      name: "鲜虾炒饭",
+      name: "鲜虾炒饭 (Кэм Занг с креветками)",
       description: "炒饭配鲜虾、洋葱、胡萝卜、毛豆、四季豆和西兰花。"
     }
   },
@@ -875,7 +875,7 @@ const MENU = [
       description: "Thịt heo trên đá nóng, bún, rau thơm tươi và nước chấm Việt Nam truyền thống."
     },
     zh: {
-      name: "烤猪肉米粉",
+      name: "烤猪肉米粉 (Бун Ча)",
       description: "热石猪肉，配越南米粉、新鲜香草和传统越南酱汁。"
     }
   },
@@ -900,7 +900,7 @@ const MENU = [
       description: "Thịt heo nướng với nem giòn, bún, rau thơm tươi và nước chấm Việt Nam truyền thống."
     },
     zh: {
-      name: "烤猪肉春卷米粉",
+      name: "烤猪肉春卷米粉 (Бун Ча Нем)",
       description: "炭烤猪肉配脆春卷、越南米粉、新鲜香草和传统越南酱汁。"
     }
   },
@@ -925,7 +925,7 @@ const MENU = [
       description: "Nem giòn ăn cùng bún, rau thơm tươi và nước chấm Việt Nam truyền thống."
     },
     zh: {
-      name: "春卷米粉",
+      name: "春卷米粉 (Бун Нем)",
       description: "脆春卷配越南米粉、新鲜香草和传统越南酱汁。"
     }
   },
@@ -975,7 +975,7 @@ const MENU = [
       description: "Bò Việt Nam cắt khối, xào lửa lớn với hành tây và ớt chuông ba màu."
     },
     zh: {
-      name: "越式摇牛肉",
+      name: "越式摇牛肉 (Бо Лук Лак)",
       description: "经典越南牛肉粒，大火快炒，配洋葱和三色甜椒。"
     }
   },
@@ -1000,7 +1000,7 @@ const MENU = [
       description: "Bò xào với hành tây, bông cải xanh, bí ngòi, nấm, ớt chuông và cải thảo trên chảo nóng."
     },
     zh: {
-      name: "炒牛肉",
+      name: "炒牛肉 (Бо Сао)",
       description: "热锅炒牛肉，配洋葱、西兰花、西葫芦、蘑菇、甜椒和白菜。"
     }
   },
@@ -1025,7 +1025,7 @@ const MENU = [
       description: "Gà xào với hành tây, bông cải xanh, bí ngòi, nấm, ớt chuông và cải thảo trên chảo nóng."
     },
     zh: {
-      name: "炒鸡肉",
+      name: "炒鸡肉 (Га Сао)",
       description: "热锅炒鸡肉，配洋葱、西兰花、西葫芦、蘑菇、甜椒和白菜。"
     }
   },
@@ -1050,7 +1050,7 @@ const MENU = [
       description: "Tôm, mực và nghêu xào cùng rau củ — hành tây, bông cải xanh, bí ngòi, nấm, ớt chuông và cải thảo — trên chảo nóng."
     },
     zh: {
-      name: "炒海鲜",
+      name: "炒海鲜 (Хай Сан Сао)",
       description: "虾、鱿鱼和青口贝搭配洋葱、西兰花、西葫芦、蘑菇、甜椒和大白菜，在高温铁板上炒制。"
     }
   },
@@ -1075,7 +1075,7 @@ const MENU = [
       description: "Gà giòn xào với hành tây và giá đỗ trong sốt sweet chili, rắc đậu phộng. Dùng kèm cơm trắng."
     },
     zh: {
-      name: "甜辣鸡",
+      name: "甜辣鸡 (Курица Свит Чили)",
       description: "香脆鸡肉与洋葱、绿豆芽一起炒制，拌以甜辣酱并撒上花生。配白米饭。"
     }
   },
@@ -1100,35 +1100,35 @@ const MENU = [
       description: "Gà giòn sốt mật ong–xì dầu, xào cùng hành tây, bông cải xanh, ớt chuông, nấm và cải thảo. Dùng kèm cơm trắng."
     },
     zh: {
-      name: "蜂蜜酱油鸡",
+      name: "蜂蜜酱油鸡 (Курица Мат Аунг)",
       description: "香脆鸡肉配酱油蜂蜜酱，搭配洋葱、西兰花、甜椒、蘑菇和大白菜。配白米饭。"
     }
   },
-  // {
-  //   id: "chicken-cam",
-  //   category: "hot",
-  //   price: 19,
-  //   weight: "Цена",
-  //   image: "images/chicken-cam.webp",
-  //   spicy: false,
-  //   hit: false,
-  //   ru: {
-  //     name: "Курица Кам",
-  //     description: "Хрустящая курица в апельсиновом соусе с бобами эдамаме. Подаётся с белым рисом."
-  //   },
-  //   en: {
-  //     name: "Orange Chicken",
-  //     description: "Crispy chicken in orange sauce with edamame. Served with white rice."
-  //   },
-  //   vn: {
-  //     name: "Gà Sốt Cam",
-  //     description: "Gà giòn sốt cam với edamame. Ăn kèm cơm trắng."
-  //   },
-  //   zh: {
-  //     name: "橙汁鸡",
-  //     description: "脆鸡肉配橙汁酱和毛豆。搭配白米饭。"
-  //   }
-  // },
+  {
+    id: "chicken-cam",
+    category: "hot",
+    price: 19,
+    weight: "Цена",
+    image: "images/chicken-cam.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Курица Кам",
+      description: "Хрустящая курица в апельсиновом соусе с бобами эдамаме. Подаётся с белым рисом."
+    },
+    en: {
+      name: "Orange Chicken",
+      description: "Crispy chicken in orange sauce with edamame. Served with white rice."
+    },
+    vn: {
+      name: "Gà Sốt Cam",
+      description: "Gà giòn sốt cam với edamame. Ăn kèm cơm trắng."
+    },
+    zh: {
+      name: "橙汁鸡 (Курица Кам)",
+      description: "脆鸡肉配橙汁酱和毛豆。搭配白米饭。"
+    }
+  },
   {
     id: "chicken-kai",
     category: "hot",
@@ -1150,7 +1150,7 @@ const MENU = [
       description: "Gà giòn sốt cay, xào với hành tây, cà rốt, ớt chuông và đậu cô ve. Ăn kèm cơm trắng."
     },
     zh: {
-      name: "辣味鸡",
+      name: "辣味鸡 (Курица Кай)",
       description: "脆鸡肉配辣酱、洋葱、胡萝卜、甜椒和四季豆。搭配白米饭。"
     }
   },
@@ -1175,7 +1175,7 @@ const MENU = [
       description: "Tôm xào sốt mật ong–xì dầu với hành tây, nấm, bông cải xanh, cà rốt và cải thảo. Dùng kèm cơm trắng."
     },
     zh: {
-      name: "蜂蜜酱油虾",
+      name: "蜂蜜酱油虾 (Креветки Мат Аунг)",
       description: "虾仁配酱油蜂蜜酱，与洋葱、蘑菇、西兰花、胡萝卜和大白菜一起炒制。配白米饭。"
     }
   },
@@ -1200,7 +1200,7 @@ const MENU = [
       description: "Tôm giòn sốt mayo béo cay, xào với hành tây, bông cải xanh và cà rốt. Ăn kèm cơm trắng."
     },
     zh: {
-      name: "蛋黄酱虾",
+      name: "蛋黄酱虾 (Креветки Майо)",
       description: "脆虾配奶香微辣酱，炒洋葱、西兰花和胡萝卜。搭配白米饭。"
     }
   },
@@ -1225,7 +1225,7 @@ const MENU = [
       description: "Bò cay đậm vị, xào với hành tây, bí ngòi, cà rốt và cải thảo. Ăn kèm cơm trắng."
     },
     zh: {
-      name: "辣味牛肉",
+      name: "辣味牛肉 (Говядина Кай)",
       description: "香辣牛肉，炒洋葱、西葫芦、胡萝卜和白菜。搭配白米饭。"
     }
   },
@@ -1250,7 +1250,7 @@ const MENU = [
       description: "Bò sốt mật ong hơi caramel, xào với hành tây, nấm và cà rốt. Ăn kèm cơm trắng."
     },
     zh: {
-      name: "蜂蜜牛肉",
+      name: "蜂蜜牛肉 (Говядина Мат Аунг)",
       description: "蜂蜜酱牛肉，轻微焦糖化，炒洋葱、蘑菇和胡萝卜。搭配白米饭。"
     }
   },
@@ -1275,7 +1275,7 @@ const MENU = [
       description: "Cá rô phi tẩm bột, xào với hành tây, bông cải xanh và edamame trong sốt mayo. Ăn kèm cơm trắng."
     },
     zh: {
-      name: "蛋黄酱鱼",
+      name: "蛋黄酱鱼 (Ка Майо)",
       description: "裹粉罗非鱼，配洋葱、西兰花和毛豆，用招牌蛋黄酱炒制。搭配白米饭。"
     }
   },
@@ -1300,7 +1300,7 @@ const MENU = [
       description: "Cá rô phi tẩm bột, xào với hành tây và đậu cô ve trong sốt unagi. Ăn kèm cơm trắng."
     },
     zh: {
-      name: "鳗鱼汁鱼",
+      name: "鳗鱼汁鱼 (Ка Унаги)",
       description: "裹粉罗非鱼，配洋葱和四季豆，用鳗鱼汁炒制。搭配白米饭。"
     }
   },
@@ -1325,7 +1325,7 @@ const MENU = [
       description: "Đậu phụ giòn sốt ngọt cay, xào với hành tây, cà rốt, ớt chuông và đậu cô ve. Ăn kèm cơm trắng."
     },
     zh: {
-      name: "甜辣豆腐",
+      name: "甜辣豆腐 (Тофу Свит Чили)",
       description: "脆豆腐配甜辣酱，炒洋葱、胡萝卜、甜椒和四季豆。搭配白米饭。"
     }
   },
@@ -1350,7 +1350,7 @@ const MENU = [
       description: "Cà tím sốt cay kiểu Á, xào cùng hành tây, bông cải xanh, cà rốt và ớt chuông. Dùng kèm cơm trắng."
     },
     zh: {
-      name: "辣味茄子",
+      name: "辣味茄子 (Баклажан Кай)",
       description: "香辣亚洲风味茄子，配洋葱、西兰花、胡萝卜和甜椒。配白米饭。"
     }
   },
@@ -1375,7 +1375,7 @@ const MENU = [
       description: "Bông cải xanh tẩm bột giòn, xào trong sốt ngọt với đậu phộng. Ăn kèm cơm trắng."
     },
     zh: {
-      name: "脆炸西兰花",
+      name: "脆炸西兰花 (Криспи брокколи)",
       description: "脆浆西兰花，配甜酱和花生。搭配白米饭。"
     }
   },
@@ -1401,7 +1401,7 @@ const MENU = [
       description: "Gỏi Việt Nam tươi với tôm, dưa leo, ớt chuông, cà rốt, giá đỗ, hành tây, rau mùi và đậu phộng."
     },
     zh: {
-      name: "鲜虾越南沙拉",
+      name: "鲜虾越南沙拉 (Ном Том)",
       description: "新鲜越南沙拉，配虾、黄瓜、甜椒、胡萝卜、绿豆芽、洋葱、香菜和花生。"
     }
   },
@@ -1426,7 +1426,7 @@ const MENU = [
       description: "Gỏi gà nhẹ với dưa leo, ớt chuông, cà rốt, giá đỗ, hành tây, rau mùi và đậu phộng."
     },
     zh: {
-      name: "鸡肉越南沙拉",
+      name: "鸡肉越南沙拉 (Ном Га)",
       description: "清爽鸡肉沙拉，配黄瓜、甜椒、胡萝卜、绿豆芽、洋葱、香菜和花生。"
     }
   },
@@ -1476,7 +1476,7 @@ const MENU = [
       description: "Cơm trắng hấp."
     },
     zh: {
-      name: "白米饭",
+      name: "白米饭 (Белый рис)",
       description: "蒸白米饭。"
     }
   },
@@ -1501,7 +1501,7 @@ const MENU = [
       description: "Cơm rang với trứng và nước tương."
     },
     zh: {
-      name: "鸡蛋炒饭",
+      name: "鸡蛋炒饭 (Жареный рис с яйцом)",
       description: "酱油鸡蛋炒饭。"
     }
   },
@@ -1551,7 +1551,7 @@ const MENU = [
       description: "Miếng gà giòn ăn kèm khoai tây chiên."
     },
     zh: {
-      name: "鸡柳薯条",
+      name: "鸡柳薯条 (Стрипсы фри)",
       description: "香脆鸡柳配薯条。"
     }
   },
@@ -1576,85 +1576,60 @@ const MENU = [
       description: "Thịt heo chiên phục vụ trên đá nóng kèm khoai tây chiên."
     },
     zh: {
-      name: "烤串配薯条",
+      name: "烤串配薯条 (Шашлыки фри)",
       description: "铁板热石猪肉配薯条。"
     }
   },
-  // {
-  //   id: "octopus-in-the-pool",
-  //   category: "kids",
-  //   price: null,
-  //   weight: "Цена",
-  //   image: "images/octopus-in-the-pool.webp",
-  //   spicy: false,
-  //   hit: false,
-  //   ru: {
-  //     name: "Осминоги в бассейне",
-  //     description: ""
-  //   },
-  //   en: {
-  //     name: "",
-  //     description: ""
-  //   },
-  //   vn: {
-  //     name: "",
-  //     description: ""
-  //   },
-  //   zh: {
-  //     name: "",
-  //     description: ""
-  //   }
-  // },
-  // {
-  //   id: "sleeping-bear",
-  //   category: "kids",
-  //   price: 16,
-  //   weight: "Цена",
-  //   image: "images/sleeping-bear.webp",
-  //   spicy: false,
-  //   hit: false,
-  //   ru: {
-  //     name: "Спящий мишка",
-  //     description: "Рис в форме мишки с одеялом из омлета и подушкой из жареной курицы и фасоли в соусе терияки."
-  //   },
-  //   en: {
-  //     name: "Sleeping Bear",
-  //     description: "Bear-shaped rice with an omelet blanket and a pillow of fried chicken and beans in teriyaki sauce."
-  //   },
-  //   vn: {
-  //     name: "Gấu Ngủ",
-  //     description: "Cơm hình gấu với chăn trứng, gà chiên và đậu sốt teriyaki."
-  //   },
-  //   zh: {
-  //     name: "睡觉小熊",
-  //     description: "小熊造型米饭，配蛋皮被子、照烧鸡肉和豆类。"
-  //   }
-  // },
-  // {
-  //   id: "octopus-pool",
-  //   category: "kids",
-  //   price: 15,
-  //   weight: "Цена",
-  //   image: "images/octopus-in-the-pool.webp",
-  //   spicy: false,
-  //   hit: false,
-  //   ru: {
-  //     name: "Осьминожки в бассейне",
-  //     description: "Сосиски в виде осьминогов с рисом и соусом."
-  //   },
-  //   en: {
-  //     name: "Octopuses in the Pool",
-  //     description: "Octopus-shaped sausages with rice and sauce."
-  //   },
-  //   vn: {
-  //     name: "Bạch Tuộc Trong Hồ",
-  //     description: "Xúc xích tạo hình bạch tuộc ăn cùng cơm và sốt."
-  //   },
-  //   zh: {
-  //     name: "泳池小章鱼",
-  //     description: "章鱼造型香肠，配米饭和酱汁。"
-  //   }
-  // },
+  {
+    id: "sleeping-bear",
+    category: "kids",
+    price: 16,
+    weight: "Цена",
+    image: "images/sleeping-bear.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Спящий мишка",
+      description: "Рис в форме мишки с одеялом из омлета и подушкой из жареной курицы и фасоли в соусе терияки."
+    },
+    en: {
+      name: "Sleeping Bear",
+      description: "Bear-shaped rice with an omelet blanket and a pillow of fried chicken and beans in teriyaki sauce."
+    },
+    vn: {
+      name: "Gấu Ngủ",
+      description: "Cơm hình gấu với chăn trứng, gà chiên và đậu sốt teriyaki."
+    },
+    zh: {
+      name: "睡觉小熊 (Спящий мишка)",
+      description: "小熊造型米饭，配蛋皮被子、照烧鸡肉和豆类。"
+    }
+  },
+  {
+    id: "octopus-pool",
+    category: "kids",
+    price: 15,
+    weight: "Цена",
+    image: "images/octopus-in-the-pool.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Осьминожки в бассейне",
+      description: "Сосиски в виде осьминогов с рисом и соусом."
+    },
+    en: {
+      name: "Octopuses in the Pool",
+      description: "Octopus-shaped sausages with rice and sauce."
+    },
+    vn: {
+      name: "Bạch Tuộc Trong Hồ",
+      description: "Xúc xích tạo hình bạch tuộc ăn cùng cơm và sốt."
+    },
+    zh: {
+      name: "泳池小章鱼 (Осьминожки в бассейне)",
+      description: "章鱼造型香肠，配米饭和酱汁。"
+    }
+  },
   {
     id: "banh-bao",
     category: "snacks",
@@ -1676,7 +1651,7 @@ const MENU = [
       description: "Bánh bao hấp với nhân thịt, nấm mèo, miến, hành và trứng luộc."
     },
     zh: {
-      name: "越南包子",
+      name: "越南包子 (Бань Бао)",
       description: "蒸包子，配肉馅、木耳、粉丝、洋葱和水煮蛋。"
     }
   },
@@ -1726,7 +1701,7 @@ const MENU = [
       description: "Khoai lang chiên giòn."
     },
     zh: {
-      name: "炸红薯条",
+      name: "炸红薯条 (Жареный сладкий картофель (Батат))",
       description: "香脆红薯条。"
     }
   },
@@ -1801,7 +1776,7 @@ const MENU = [
       description: "Nem rán giòn với thịt, miến, cà rốt, hành và nấm mèo."
     },
     zh: {
-      name: "越南炸春卷（3个）",
+      name: "越南炸春卷（3个） (Нем (3 шт))",
       description: "酥脆越南春卷，配肉馅、粉丝、胡萝卜、洋葱和木耳。"
     }
   },
@@ -1851,7 +1826,7 @@ const MENU = [
       description: "Gỏi cuốn tươi với tôm, thịt heo, đậu phụ, trứng, bún và rau sống."
     },
     zh: {
-      name: "越南春卷（2个）",
+      name: "越南春卷（2个） (Гой Куон (2 шт))",
       description: "新鲜米纸卷，配虾、猪肉、豆腐、蛋饼、米粉和蔬菜。"
     }
   },
@@ -1877,7 +1852,7 @@ const MENU = [
       description: "Tôm chiên giòn."
     },
     zh: {
-      name: "炸虾",
+      name: "炸虾 (Том Чиен (7 шт))",
       description: "香脆炸虾。(7个）"
     }
   },
@@ -1902,7 +1877,7 @@ const MENU = [
       description: "Xúc xích chiên giòn trong lớp bột."
     },
     zh: {
-      name: "热狗棒 (1个)",
+      name: "热狗棒 (1个) (Корн-дог (1 шт))",
       description: "裹面糊油炸香肠。"
     }
   },
@@ -1927,35 +1902,35 @@ const MENU = [
       description: "Xúc xích Việt Nam phục vụ trên đá nóng."
     },
     zh: {
-      name: "越南烤香肠 (3个)",
+      name: "越南烤香肠 (3个) (Суксик Нэнг (3 шт))",
       description: "热石越南香肠。"
     }
   },
-  // {
-  //   id: "pho-mai-chien",
-  //   category: "snacks",
-  //   price: 16,
-  //   weight: "Цена",
-  //   image: "images/pho-mai-chien.webp",
-  //   spicy: false,
-  //   hit: false,
-  //   ru: {
-  //     name: "Фо Май Чиен",
-  //     description: "Жареный сыр моцарелла с хрустящей корочкой."
-  //   },
-  //   en: {
-  //     name: "Fried Mozzarella",
-  //     description: "Fried mozzarella cheese with crispy crust."
-  //   },
-  //   vn: {
-  //     name: "Phô Mai Chiên",
-  //     description: "Phô mai mozzarella chiên giòn."
-  //   },
-  //   zh: {
-  //     name: "炸芝士",
-  //     description: "香脆炸马苏里拉芝士。"
-  //   }
-  // },
+  {
+    id: "pho-mai-chien",
+    category: "snacks",
+    price: 16,
+    weight: "Цена",
+    image: "images/pho-mai-chien.webp",
+    spicy: false,
+    hit: false,
+    ru: {
+      name: "Фо Май Чиен",
+      description: "Жареный сыр моцарелла с хрустящей корочкой."
+    },
+    en: {
+      name: "Fried Mozzarella",
+      description: "Fried mozzarella cheese with crispy crust."
+    },
+    vn: {
+      name: "Phô Mai Chiên",
+      description: "Phô mai mozzarella chiên giòn."
+    },
+    zh: {
+      name: "炸芝士 (Фо Май Чиен)",
+      description: "香脆炸马苏里拉芝士。"
+    }
+  },
   // {
   //   id: "beer-set",
   //   category: "snacks",
@@ -2002,7 +1977,7 @@ const MENU = [
       description: "Chúng tôi đang chuẩn bị các món tráng miệng đặc trưng của PHONIKS."
     },
     zh: {
-      name: "即将推出",
+      name: "即将推出 (Скоро)",
       description: "PHONIKS 招牌甜点即将上线。"
     }
   },
@@ -2027,7 +2002,7 @@ const MENU = [
       description: "Các loại nước chanh Việt Nam được ưa chuộng với các hương vị như xoài, vải, dừa, chanh dây, đu đủ, chôm chôm, dưa hấu và măng cụt."
     },
     zh: {
-      name: "越南 Vinut 柠檬饮料",
+      name: "越南 Vinut 柠檬饮料 (Вьетнамские лимонады Vinut)",
       description: "受欢迎的越南柠檬饮料，口味包括芒果、荔枝、椰子、百香果、木瓜、红毛丹、西瓜和山竹。"
     }
   },
@@ -2052,7 +2027,7 @@ const MENU = [
       description: "Loại trà xanh đóng chai sẵn rất phổ biến tại Việt Nam."
     },
     zh: {
-      name: "越南绿茶 — Zero Degrees",
+      name: "越南绿茶 — Zero Degrees (Вьетнамский зеленый чай - Ноль Градусов)",
       description: "在越南非常受欢迎的即饮绿茶。"
     }
   },
@@ -2077,7 +2052,7 @@ const MENU = [
       description: "Bia Hà Nội là loại bia lager biểu tượng của thủ đô Việt Nam, được sản xuất bởi HABECO, có cả dạng bia tươi và bia chai"
     },
     zh: {
-      name: "越南啤酒 — 河内",
+      name: "越南啤酒 — 河内 (Вьетнаское пиво - Hanoi Beer)",
       description: "Bia Hà Nội（河内啤酒）是越南首都的标志性拉格啤酒，由 HABECO 生产，提供生啤和瓶装两种形式。"
     }
   },
@@ -2102,7 +2077,7 @@ const MENU = [
       description: "Bia Saigon là loại bia quốc dân tiêu biểu của Việt Nam, được sản xuất bởi SABECO."
     },
     zh: {
-      name: "越南啤酒 — 西贡啤酒",
+      name: "越南啤酒 — 西贡啤酒 (Вьетнаское пиво - Saigon Beer)",
       description: "Bia Saigon 是越南的旗舰国民啤酒，由 SABECO 酿造。"
     }
   },
@@ -2127,7 +2102,7 @@ const MENU = [
       description: "Thai Red Bull, hay còn gọi là Krating Daeng (nghĩa là “Bò rừng đỏ”), là loại nước tăng lực nguyên bản không ga, truyền cảm hứng cho thương hiệu Red Bull toàn cầu."
     },
     zh: {
-      name: "泰国红牛",
+      name: "泰国红牛 (Тайский Red Bull)",
       description: "Thai Red Bull，当地称为 Krating Daeng（意为“红野牛”），是最初的无气能量饮料，也是全球 Red Bull 品牌的灵感来源。"
     }
   },
@@ -2152,7 +2127,7 @@ const MENU = [
       description: ""
     },
     zh: {
-      name: "可口可乐原味、零度可口可乐、雪碧、芬达.（1 罐）",
+      name: "可口可乐原味、零度可口可乐、雪碧、芬达.（1 罐） (Кока-Кола Оригинал, Кока-Кола Зеро, Спрайт, Фанта. (1 банка))",
       description: ""
     }
   }
