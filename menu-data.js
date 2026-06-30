@@ -134,7 +134,7 @@ const MENU = [
     category: "soups",
     price: 20,
     weight: "Цена",
-    image: "images/laksa.png",
+    image: "",
     spicy: true,
     hit: false,
     ru: {
