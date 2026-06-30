@@ -438,11 +438,11 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Миен с креветками",
+      name: "Миен сао с креветками",
       description: "Стеклянная лапша с креветками, зелёным луком, грибами, сладким перцем и брокколи."
     },
     en: {
-      name: "Mien with Shrimp",
+      name: "Mien xao with Shrimp",
       description: "Glass noodles with shrimp, green onions, mushrooms, sweet peppers, and broccoli."
     },
     vn: {
@@ -450,7 +450,7 @@ const MENU = [
       description: "Miến trộn với tôm, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
-      name: "鲜虾粉丝 (Миен с креветками)",
+      name: "鲜虾粉丝 (Миен сао с креветками)",
       description: "粉丝配虾、葱、蘑菇、甜椒和西兰花。"
     }
   },
@@ -463,11 +463,11 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Миен с курицей (схоже с миен с креветками)",
+      name: "Миен сао с курицей (схоже с миен сао с креветками)",
       description: "Стеклянная лапша с курицей, зелёным луком, грибами, сладким перцем и брокколи."
     },
     en: {
-      name: "Mien with Chicken (Similar to mien with shrimp)",
+      name: "Mien xao with Chicken (Similar to mien xao with shrimp)",
       description: "Glass noodles with chicken, green onions, mushrooms, sweet peppers, and broccoli."
     },
     vn: {
@@ -475,7 +475,7 @@ const MENU = [
       description: "Miến trộn với thịt gà, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
-      name: "鸡肉粉丝 (类似于虾粉丝) (Миен с курицей)",
+      name: "鸡肉粉丝 (类似于虾粉丝) (Миен сао с курицей)",
       description: "粉丝配鸡肉、葱、蘑菇、甜椒和西兰花。"
     }
   },
@@ -488,11 +488,11 @@ const MENU = [
     spicy: false,
     hit: false,
     ru: {
-      name: "Миен с говядиной (схоже с миен с креветками)",
+      name: "Миен сао с говядиной (схоже с миен сао с креветками)",
       description: "Стеклянная лапша с говядиной, зелёным луком, грибами, сладким перцем и брокколи."
     },
     en: {
-      name: "Mien with Beef (Similar to mien with shrimp)",
+      name: "Mien xao with Beef (Similar to mien xao with shrimp)",
       description: "Glass noodles with beef, green onions, mushrooms, sweet peppers, and broccoli."
     },
     vn: {
@@ -500,7 +500,7 @@ const MENU = [
       description: "Miến trộn với thịt bò, hành lá, nấm, ớt chuông và bông cải xanh."
     },
     zh: {
-      name: "牛肉粉丝 (类似于虾粉丝) (Миен с говядиной)",
+      name: "牛肉粉丝 (类似于虾粉丝) (Миен сао с говядиной)",
       description: "粉丝配牛肉、葱、蘑菇、甜椒和西兰花。"
     }
   },
@@ -1856,31 +1856,31 @@ const MENU = [
       description: "香脆炸虾。(7个）"
     }
   },
-  {
-    id: "corn-dog",
-    category: "snacks",
-    price: 7,
-    weight: "Цена",
-    image: "images/corn-dog.webp",
-    spicy: false,
-    hit: false,
-    ru: {
-      name: "Корн-дог (1 шт)",
-      description: "Жареная сосиска в хрустящем тесте."
-    },
-    en: {
-      name: "Corn Dog (1 pcs)",
-      description: "Fried sausage in crispy batter."
-    },
-    vn: {
-      name: "Corn Dog (1 cái)",
-      description: "Xúc xích chiên giòn trong lớp bột."
-    },
-    zh: {
-      name: "热狗棒 (1个) (Корн-дог (1 шт))",
-      description: "裹面糊油炸香肠。"
-    }
-  },
+  // {
+  //   id: "corn-dog",
+  //   category: "snacks",
+  //   price: 7,
+  //   weight: "Цена",
+  //   image: "images/corn-dog.webp",
+  //   spicy: false,
+  //   hit: false,
+  //   ru: {
+  //     name: "Корн-дог (1 шт)",
+  //     description: "Жареная сосиска в хрустящем тесте."
+  //   },
+  //   en: {
+  //     name: "Corn Dog (1 pcs)",
+  //     description: "Fried sausage in crispy batter."
+  //   },
+  //   vn: {
+  //     name: "Corn Dog (1 cái)",
+  //     description: "Xúc xích chiên giòn trong lớp bột."
+  //   },
+  //   zh: {
+  //     name: "热狗棒 (1个) (Корн-дог (1 шт))",
+  //     description: "裹面糊油炸香肠。"
+  //   }
+  // },
   {
     id: "xuc-xich-nuong",
     category: "snacks",
